@@ -1,0 +1,780 @@
+/* ==========================================================================
+   Home Page Styles ("Ciao Bello · Pizzeria" 11:23834)
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. Hero Section ("Pizza night starts here" 1440×694)
+   -------------------------------------------------------------------------- */
+.home-hero {
+  width: 100%;
+  background-color: var(--color-cream);
+}
+
+.home-hero__inner {
+  max-width: var(--page-max-width);
+  margin: 0 auto;
+  padding: 32px 32px 32px var(--section-pad-x);
+  display: grid;
+  grid-template-columns: 608px 696px;
+  gap: 32px;
+  align-items: center;
+}
+
+.home-hero__message {
+  padding-right: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 36px;
+}
+
+.home-hero__story {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.home-hero__kicker {
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: var(--fw-semibold);
+  line-height: 13.3px;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  color: var(--color-tomato);
+}
+
+.home-hero__headline {
+  font-family: var(--font-display);
+  font-size: 86px;
+  font-weight: var(--fw-black);
+  line-height: 84.3px;
+  letter-spacing: -4px;
+  color: var(--color-tomato);
+}
+
+.home-hero__desc {
+  max-width: 500px;
+  font-family: var(--font-sans);
+  font-size: 18px;
+  font-weight: var(--fw-regular);
+  line-height: 29.7px;
+  color: var(--color-taupe);
+}
+
+.home-hero__actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 28px;
+}
+
+.home-hero__service {
+  max-width: 500px;
+  border-top: 1px solid var(--color-sand);
+  padding-top: 22px;
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: var(--fw-medium);
+  line-height: 14.5px;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  color: var(--color-taupe);
+  white-space: pre-wrap;
+}
+
+.home-hero__media {
+  position: relative;
+  width: 100%;
+  height: 630px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.home-hero__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.home-hero__seal {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+}
+
+.home-hero__caption {
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  background-color: var(--color-cream);
+  border-radius: var(--radius-pill);
+  padding: 12px 18px;
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: var(--fw-regular);
+  line-height: 15.7px;
+  color: var(--color-espresso);
+}
+
+/* --------------------------------------------------------------------------
+   2. The Signature Menu ("The signature menu" 1440×914)
+   -------------------------------------------------------------------------- */
+.home-signature-menu {
+  width: 100%;
+  background-color: var(--color-cream);
+}
+
+.home-signature-menu__inner {
+  max-width: var(--page-max-width);
+  margin: 0 auto;
+  padding: 96px var(--section-pad-x);
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.home-signature-menu__header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.home-signature-menu__title-group {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.home-signature-menu__heading {
+  font-family: var(--font-display);
+  font-size: 72px;
+  font-weight: var(--fw-regular);
+  line-height: 67px;
+  letter-spacing: -3px;
+  color: var(--color-tomato);
+}
+
+.home-category-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--color-sand);
+}
+
+.home-category-bar__note {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: var(--fw-regular);
+  line-height: 15.7px;
+  color: var(--color-taupe);
+}
+
+.home-pizza-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.home-pizza-card {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.home-pizza-card__media {
+  position: relative;
+  width: 100%;
+  height: 390px;
+  border-radius: var(--radius-card);
+  overflow: hidden;
+}
+
+.home-pizza-card__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--radius-card);
+  transition: transform var(--transition-base);
+}
+
+.home-pizza-card:hover .home-pizza-card__img {
+  transform: scale(1.02);
+}
+
+.home-pizza-card__quick-add {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-pill);
+  background-color: var(--color-cream);
+  border: 1px solid var(--color-tomato);
+  color: var(--color-tomato);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-sans);
+  font-size: 22px;
+  font-weight: var(--fw-regular);
+  line-height: 26.6px;
+  cursor: pointer;
+  transition: background-color var(--transition-fast), color var(--transition-fast);
+}
+
+.home-pizza-card__quick-add:hover {
+  background-color: var(--color-tomato);
+  color: var(--color-cream);
+}
+
+.home-pizza-card__details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.home-pizza-card__top {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.home-pizza-card__name {
+  font-family: var(--font-display);
+  font-size: 29px;
+  font-weight: var(--fw-regular);
+  line-height: 31.9px;
+  color: var(--color-espresso);
+}
+
+.home-pizza-card__name a:hover {
+  color: var(--color-tomato);
+}
+
+.home-pizza-card__price {
+  font-family: var(--font-sans);
+  font-size: 18px;
+  font-weight: var(--fw-medium);
+  line-height: 21.8px;
+  color: var(--color-tomato);
+}
+
+.home-pizza-card__desc {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: var(--fw-regular);
+  line-height: 21.7px;
+  color: var(--color-taupe);
+}
+
+.home-pizza-card__tag {
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: var(--fw-semibold);
+  line-height: 13.3px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: var(--color-taupe);
+}
+
+.home-signature-menu__note {
+  text-align: center;
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: var(--fw-regular);
+  line-height: 15.7px;
+  color: var(--color-taupe);
+}
+
+/* --------------------------------------------------------------------------
+   3. Our Slow Dough Story ("Our slow dough story" 1440×710, #F8EBDC bg)
+   -------------------------------------------------------------------------- */
+.home-dough-story {
+  width: 100%;
+  background-color: var(--color-parchment);
+}
+
+.home-dough-story__inner {
+  max-width: var(--page-max-width);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 720px 720px;
+}
+
+.home-dough-story__media {
+  position: relative;
+  width: 100%;
+  height: 710px;
+  overflow: hidden;
+}
+
+.home-dough-story__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--radius-card);
+}
+
+.home-dough-story__caption {
+  position: absolute;
+  left: 24px;
+  bottom: 24px;
+  background-color: var(--color-cream);
+  border-radius: var(--radius-pill);
+  padding: 10px 18px;
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: var(--fw-semibold);
+  line-height: 13.3px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: var(--color-tomato);
+}
+
+.home-dough-story__copy {
+  padding: 72px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 28px;
+}
+
+.home-dough-story__heading {
+  font-family: var(--font-display);
+  font-size: 64px;
+  font-weight: var(--fw-regular);
+  line-height: 64px;
+  letter-spacing: -2.5px;
+  color: var(--color-tomato);
+}
+
+.home-dough-story__lead {
+  font-family: var(--font-sans);
+  font-size: 17px;
+  font-weight: var(--fw-regular);
+  line-height: 28px;
+  color: var(--color-taupe);
+}
+
+.home-dough-story__sub {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  font-weight: var(--fw-regular);
+  line-height: 26.4px;
+  color: var(--color-espresso);
+}
+
+.home-dough-story__sig {
+  border-top: 1px solid var(--color-sand);
+  padding-top: 24px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.home-dough-story__names {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 32px;
+  font-weight: var(--fw-regular);
+  line-height: 39.5px;
+  color: var(--color-tomato);
+}
+
+.home-dough-story__role {
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: var(--fw-medium);
+  line-height: 16px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--color-taupe);
+  white-space: pre-line;
+}
+
+/* --------------------------------------------------------------------------
+   4. The Good Stuff ("The good stuff" 1440×274)
+   -------------------------------------------------------------------------- */
+.home-good-stuff {
+  width: 100%;
+  background-color: var(--color-cream);
+}
+
+.home-good-stuff__inner {
+  max-width: var(--page-max-width);
+  margin: 0 auto;
+  padding: 64px var(--section-pad-x);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+.good-stuff-item {
+  border-top: 1px solid var(--color-tomato);
+  padding-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.good-stuff-item__stat {
+  font-family: var(--font-display);
+  font-size: 42px;
+  font-weight: var(--fw-regular);
+  line-height: 44.5px;
+  letter-spacing: -1px;
+  color: var(--color-tomato);
+}
+
+.good-stuff-item__title {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: var(--fw-semibold);
+  line-height: 16.9px;
+  color: var(--color-espresso);
+}
+
+.good-stuff-item__desc {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: var(--fw-regular);
+  line-height: 20.2px;
+  color: var(--color-taupe);
+}
+
+/* --------------------------------------------------------------------------
+   5. Pizza Your Way ("Pizza your way" 1440×567, #C63627 bg)
+   -------------------------------------------------------------------------- */
+.home-service-ways {
+  width: 100%;
+  background-color: var(--color-tomato);
+  color: var(--color-cream);
+  display: flex;
+  flex-direction: column;
+}
+
+.home-service-ways__inner {
+  max-width: var(--page-max-width);
+  width: 100%;
+  margin: 0 auto;
+  padding: 72px var(--section-pad-x);
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+}
+
+.home-service-ways__header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.home-service-ways__title-group {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.home-service-ways__heading {
+  font-family: var(--font-display);
+  font-size: 68px;
+  font-weight: var(--fw-regular);
+  line-height: 64.6px;
+  letter-spacing: -2.5px;
+  color: var(--color-cream);
+}
+
+.home-service-ways__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.service-way-card {
+  border-top: 1px solid var(--color-cream);
+  padding-top: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.service-way-card__icon {
+  width: 28px;
+  height: 28px;
+  display: block;
+}
+
+.service-way-card__title {
+  font-family: var(--font-display);
+  font-size: 32px;
+  font-weight: var(--fw-regular);
+  line-height: 35.2px;
+  color: var(--color-cream);
+}
+
+.service-way-card__desc {
+  font-family: var(--font-sans);
+  font-size: 15px;
+  font-weight: var(--fw-regular);
+  line-height: 24px;
+  color: var(--color-cream);
+}
+
+.service-way-card__meta {
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: var(--fw-semibold);
+  line-height: 13.3px;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  color: var(--color-cream);
+}
+
+/* --------------------------------------------------------------------------
+   6. Love From The Neighborhood ("Love from the neighborhood" 1440×650)
+   -------------------------------------------------------------------------- */
+.home-reviews {
+  width: 100%;
+  background-color: var(--color-cream);
+}
+
+.home-reviews__inner {
+  max-width: var(--page-max-width);
+  margin: 0 auto;
+  padding: 96px var(--section-pad-x);
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+}
+
+.home-reviews__header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.home-reviews__title-group {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.home-reviews__heading {
+  font-family: var(--font-display);
+  font-size: 64px;
+  font-weight: var(--fw-regular);
+  line-height: 60.8px;
+  letter-spacing: -2.5px;
+  color: var(--color-tomato);
+}
+
+.home-reviews__summary {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
+}
+
+.home-reviews__score {
+  font-family: var(--font-display);
+  font-size: 32px;
+  font-weight: var(--fw-regular);
+  line-height: 39.5px;
+  color: var(--color-tomato);
+}
+
+.home-reviews__count {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: var(--fw-regular);
+  line-height: 15.7px;
+  color: var(--color-taupe);
+}
+
+.home-reviews__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 36px;
+}
+
+.review-card {
+  border-top: 1px solid var(--color-sand);
+  border-bottom: 1px solid var(--color-sand);
+  padding: 28px 0;
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.review-card__top {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.review-card__stars {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: var(--fw-regular);
+  line-height: 16.9px;
+  letter-spacing: 3px;
+  color: var(--color-tomato);
+}
+
+.review-card__quote {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: var(--fw-regular);
+  line-height: 31.9px;
+  color: var(--color-espresso);
+}
+
+.review-card__author {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.review-card__name {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: var(--fw-semibold);
+  line-height: 16.9px;
+  color: var(--color-espresso);
+}
+
+.review-card__context {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: var(--fw-regular);
+  line-height: 14.5px;
+  color: var(--color-taupe);
+}
+
+/* --------------------------------------------------------------------------
+   7. Your Neighborhood Table ("Your neighborhood table" 1440×720, #F8EBDC bg)
+   -------------------------------------------------------------------------- */
+.home-table-section {
+  width: 100%;
+  background-color: var(--color-parchment);
+}
+
+.home-table-section__inner {
+  max-width: var(--page-max-width);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 650px 790px;
+}
+
+.home-table-section__details {
+  padding: 64px var(--section-pad-x);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 28px;
+}
+
+.home-table-section__heading {
+  font-family: var(--font-display);
+  font-size: 64px;
+  font-weight: var(--fw-regular);
+  line-height: 62.7px;
+  letter-spacing: -2.5px;
+  color: var(--color-tomato);
+}
+
+.home-table-section__address {
+  font-family: var(--font-sans);
+  font-size: 18px;
+  font-weight: var(--fw-medium);
+  line-height: 26.1px;
+  color: var(--color-espresso);
+}
+
+.home-table-section__hours {
+  border-top: 1px solid var(--color-sand);
+  border-bottom: 1px solid var(--color-sand);
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.hours-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 16.9px;
+}
+
+.hours-row__day {
+  font-weight: var(--fw-medium);
+  color: var(--color-espresso);
+}
+
+.hours-row__time {
+  font-weight: var(--fw-regular);
+  color: var(--color-taupe);
+}
+
+.home-table-section__actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 28px;
+}
+
+.home-table-section__btn {
+  height: 52px;
+  padding: 0 24px;
+}
+
+.home-table-section__phone {
+  font-family: var(--font-sans);
+  font-size: 15px;
+  font-weight: var(--fw-medium);
+  line-height: 18.2px;
+  color: var(--color-tomato);
+}
+
+.home-table-section__media {
+  position: relative;
+  width: 100%;
+  height: 720px;
+  overflow: hidden;
+}
+
+.home-table-section__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--radius-card);
+}
+
+.home-table-section__badge {
+  position: absolute;
+  left: 24px;
+  bottom: 24px;
+  background-color: var(--color-cream);
+  border-radius: var(--radius-pill);
+  padding: 12px 20px;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 21px;
+  font-weight: var(--fw-regular);
+  line-height: 25.9px;
+  color: var(--color-tomato);
+}

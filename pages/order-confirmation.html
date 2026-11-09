@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ciao Bello · Order confirmation</title>
+  <meta name="description" content="Your order is confirmed. We’re getting the oven ready for your little feast.">
+  <link rel="icon" type="image/svg+xml" href="../assets/logos/ciao-bello-wordmark.svg">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/pages/order-confirmation.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body class="page-wrapper" data-page="order-confirmation">
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Top Welcome Announcement Bar -->
+  <div class="welcome-bar" role="region" aria-label="Store announcement">
+    <div class="welcome-bar__inner">
+      <span>A LITTLE NAPOLI. A LOT OF NEIGHBORHOOD. &nbsp;&bull;&nbsp; OPEN DAILY FROM NOON</span>
+    </div>
+  </div>
+
+  <!-- Primary Site Header -->
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a href="../index.html" class="brand-wordmark" aria-label="Ciao Bello Pizzeria Home">ciao, bello!</a>
+
+      <nav class="primary-nav" aria-label="Primary navigation">
+        <a href="menu.html" class="nav-link">The menu</a>
+        <a href="about.html" class="nav-link">Our story</a>
+        <a href="stores.html" class="nav-link">Come on over</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="order-online.html" class="header-cta">
+          <span>Order online</span>
+          <span class="header-cta__arrow" aria-hidden="true">↗</span>
+        </a>
+        <button type="button" class="mobile-menu-btn" data-mobile-menu-toggle aria-expanded="false" aria-controls="mobile-drawer" aria-label="Open navigation menu">
+          <span class="mobile-menu-btn__bars" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-drawer__backdrop" data-mobile-drawer-backdrop></div>
+  <aside id="mobile-drawer" class="mobile-drawer" aria-label="Mobile navigation" aria-hidden="true">
+    <div>
+      <div class="mobile-drawer__header">
+        <span class="brand-wordmark">ciao, bello!</span>
+        <button type="button" class="mobile-drawer__close" data-mobile-menu-close aria-label="Close navigation menu">&#10005;</button>
+      </div>
+      <nav class="mobile-drawer__nav" aria-label="Mobile links">
+        <a href="../index.html" class="mobile-drawer__link">Home</a>
+        <a href="menu.html" class="mobile-drawer__link">The menu</a>
+        <a href="about.html" class="mobile-drawer__link">Our story</a>
+        <a href="stores.html" class="mobile-drawer__link">Come on over</a>
+        <a href="deals.html" class="mobile-drawer__link">Offers</a>
+        <a href="catering.html" class="mobile-drawer__link">Catering &amp; parties</a>
+        <a href="contact.html" class="mobile-drawer__link">Contact</a>
+        <a href="cart.html" class="mobile-drawer__link">Your cart (<span data-cart-count>0</span>)</a>
+      </nav>
+    </div>
+    <div class="mobile-drawer__footer">
+      <a href="order-online.html" class="btn btn--primary btn--full">
+        <span>Order online</span>
+        <span class="btn__arrow" aria-hidden="true">↗</span>
+      </a>
+      <p class="text-xs">182 DeGraw Street, Brooklyn • Open daily from noon</p>
+    </div>
+  </aside>
+
+  <main id="main-content">
+    <!-- 1. Order Confirmation Introduction (1440×403) -->
+    <section class="confirmation-intro-section" aria-labelledby="confirmation-heading">
+      <div class="confirmed-seal" aria-hidden="true">
+        <svg class="confirmed-seal__icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6 18L13.5 25.5L30 9" stroke="#FFF6E7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <p class="section-eyebrow" data-confirmed-reference>GRAZIE, ALEX! · ORDER #CB-1048</p>
+      <h1 id="confirmation-heading" class="confirmation-intro__headline">Good pizza is on its way.</h1>
+      <p class="confirmation-intro__desc">Your order is confirmed. We’re getting the oven ready for your little feast.</p>
+      <p class="confirmation-intro__meta" data-confirmed-meta>Monday, November 9, 2026 · Placed at 6:38 pm · Confirmation sent to <span data-confirmed-email>alex.morgan@example.com</span></p>
+    </section>
+
+    <!-- 2. Confirmed Order Workspace (1440×1590) -->
+    <section class="confirmed-workspace-section" aria-label="Order progress and receipt">
+      <div class="confirmed-workspace-section__inner">
+        <!-- Main Column (850px) -->
+        <div class="confirmed-main-col">
+          <!-- Pickup Time Card -->
+          <article class="pickup-window-card">
+            <p class="section-eyebrow">YOUR PICKUP WINDOW</p>
+            <h2 class="pickup-window-card__time">Today, 7:00–7:15 pm</h2>
+            <p class="pickup-window-card__addr">Carroll Gardens · 182 DeGraw Street, Brooklyn, NY 11231</p>
+            <p class="pickup-window-card__instructions">Come to the counter and give us your name or order #CB-1048. We’ll text (917) 555-0126 when it’s ready.</p>
+          </article>
+
+          <!-- Order Progress -->
+          <article class="order-progress-card">
+            <h2 class="order-progress-card__title">A little closer to your first bite.</h2>
+            <div class="progress-stages-grid">
+              <div class="order-stage order-stage--completed">
+                <span class="order-stage__icon" aria-hidden="true">✓</span>
+                <span class="order-stage__name">Order received</span>
+                <span class="order-stage__desc">6:38 pm</span>
+              </div>
+              <div class="order-stage order-stage--current">
+                <span class="order-stage__icon" aria-hidden="true">●</span>
+                <span class="order-stage__name">Made with amore</span>
+                <span class="order-stage__desc">We’re preparing your order</span>
+              </div>
+              <div class="order-stage">
+                <span class="order-stage__icon" aria-hidden="true">○</span>
+                <span class="order-stage__name">Ready for pickup</span>
+                <span class="order-stage__desc">We’ll send you a text</span>
+              </div>
+            </div>
+          </article>
+
+          <hr class="divider-sand">
+
+          <!-- Pickup Guidance -->
+          <div class="pickup-guidance-row">
+            <div class="pickup-guidance__copy">
+              <p class="section-eyebrow">SWING BY. GRAB A PIE.</p>
+              <h2 class="pickup-guidance__title">We’ll see you<br>at the counter.</h2>
+              <p class="pickup-guidance__desc">A short stroll from the F &amp; G. Please collect during your pickup window so your pizza is at its best.</p>
+              <div>
+                <a href="https://maps.google.com/?q=182+DeGraw+Street+Brooklyn+NY+11231" target="_blank" rel="noopener noreferrer" class="btn btn--outline">
+                  <span>Get directions</span>
+                  <span class="btn__arrow" aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </div>
+            <img src="../assets/images/neighborhood-pizzeria-interior.png" alt="Ciao Bello pizzeria counter" class="pickup-guidance__img" width="390" height="300">
+          </div>
+
+          <!-- Illustrated Map -->
+          <div class="neighborhood-map" role="img" aria-label="Neighborhood map indicating Carroll Gardens location at 182 DeGraw Street, near Court Street and Carroll Park">
+            <div class="neighborhood-map__grid"></div>
+            <div class="neighborhood-map__water"></div>
+            <div class="neighborhood-map__park"></div>
+            <div class="neighborhood-map__avenue"></div>
+            <div class="neighborhood-map__street"></div>
+            <span class="neighborhood-map__label" style="left: 4.5%; top: 41.8%;">DEGRAW STREET</span>
+            <span class="neighborhood-map__label" style="left: 44.5%; top: 75.5%;">COURT STREET</span>
+            <span class="neighborhood-map__label" style="left: 70.1%; top: 57.2%;">Carroll Park</span>
+            <div class="neighborhood-map__pin" style="left: 25.8%; top: 25.5%;">
+              <span class="neighborhood-map__pin-dot" aria-hidden="true">♡</span>
+              <span class="neighborhood-map__pin-text">ciao, bello! · 182 DeGraw</span>
+            </div>
+          </div>
+
+          <!-- Order Support -->
+          <div class="order-support-box">
+            <img src="../assets/icons/phone.svg" alt="" class="order-support-box__icon" width="28" height="28">
+            <div class="order-support-box__copy">
+              <h3 class="order-support-box__title">Need to change something?</h3>
+              <p class="order-support-box__desc">Call (718) 555-0148 and quote #CB-1048. We’ll do our best to help before your pizza goes into the oven.</p>
+            </div>
+          </div>
+
+          <!-- Actions -->
+          <div class="receipt-actions-row">
+            <button type="button" class="btn btn--outline" data-print-receipt>
+              <span>Download receipt</span>
+              <span class="btn__arrow" aria-hidden="true">↗</span>
+            </button>
+            <a href="menu.html" class="btn btn--primary">
+              <span>Back to the menu</span>
+              <span class="btn__arrow" aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Receipt Sidebar (398px) -->
+        <aside class="cart-summary-card" aria-labelledby="receipt-heading">
+          <p class="section-eyebrow">YOUR RECEIPT</p>
+          <h2 id="receipt-heading" class="cart-summary-card__title">Paid. With amore.</h2>
+          <p class="text-xs text-taupe" style="margin-top: -10px;">Pickup · Carroll Gardens<br>Today, 7:00–7:15 pm</p>
+
+          <hr class="divider-sand">
+
+          <div class="order-summary-list" data-receipt-items>
+            <div class="summary-item">
+              <div class="summary-item__row">
+                <span class="summary-item__name">1 × The Margherita</span>
+                <span class="summary-item__price">$21.00</span>
+              </div>
+              <p class="summary-item__desc">12” · Classic crust · Extra fior di latte +$3</p>
+            </div>
+
+            <div class="summary-item">
+              <div class="summary-item__row">
+                <span class="summary-item__name">1 × Hot Honey, Amore</span>
+                <span class="summary-item__price">$23.00</span>
+              </div>
+              <p class="summary-item__desc">12” · Classic crust · No extras</p>
+            </div>
+
+            <div class="summary-item">
+              <div class="summary-item__row">
+                <span class="summary-item__name">1 × Garlic knots</span>
+                <span class="summary-item__price">$8.00</span>
+              </div>
+              <p class="summary-item__desc">6 pieces · Marinara on the side</p>
+            </div>
+
+            <div class="summary-item">
+              <div class="summary-item__row">
+                <span class="summary-item__name">2 × Italian soda</span>
+                <span class="summary-item__price">$8.00</span>
+              </div>
+              <p class="summary-item__desc">Blood orange · 330 ml · $4 each</p>
+            </div>
+          </div>
+
+          <hr class="divider-sand">
+
+          <div class="cart-breakdown">
+            <div class="breakdown-row">
+              <span class="breakdown-row__label">Subtotal</span>
+              <span class="breakdown-row__value" data-receipt-subtotal>$60.00</span>
+            </div>
+            <div class="breakdown-row">
+              <span class="breakdown-row__label">CIAO5 · Welcome discount</span>
+              <span class="breakdown-row__value" data-receipt-discount>−$5.00</span>
+            </div>
+            <div class="breakdown-row">
+              <span class="breakdown-row__label">Pickup</span>
+              <span class="breakdown-row__value">Free</span>
+            </div>
+            <div class="breakdown-row">
+              <span class="breakdown-row__label">NY sales tax · 8.875%</span>
+              <span class="breakdown-row__value" data-receipt-tax>$4.88</span>
+            </div>
+            <div class="breakdown-row">
+              <span class="breakdown-row__label">Tip</span>
+              <span class="breakdown-row__value" data-receipt-tip>$0.00</span>
+            </div>
+          </div>
+
+          <hr class="divider-sand">
+
+          <div class="total-row">
+            <span class="total-row__label">Total paid</span>
+            <span class="total-row__amount" data-receipt-total>$59.88</span>
+          </div>
+
+          <p class="text-xs text-taupe">Visa ending in 4242<br>Receipt sent to alex.morgan@example.com</p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- 3. Thank You Ribbon (1440×110) -->
+    <section class="thank-you-ribbon" aria-label="Thank you note">
+      <p class="thank-you-ribbon__text">You bring the company. We’ll bring the amore. ♡</p>
+    </section>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="../index.html" class="footer-brand__wordmark">ciao, bello!</a>
+          <p class="footer-brand__desc">Your corner. Your people. Your pizza.<br>A little more amore in every day.</p>
+          <div class="footer-brand__socials">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+            <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer">TikTok ↗</a>
+          </div>
+        </div>
+
+        <div class="footer-col footer-col--explore">
+          <span class="footer-col__label">COME HUNGRY</span>
+          <a href="order-online.html" class="footer-col__link">Order online</a>
+          <a href="menu.html" class="footer-col__link">The menu</a>
+          <a href="about.html" class="footer-col__link">Our story</a>
+          <a href="stores.html" class="footer-col__link">Come on over</a>
+          <a href="deals.html" class="footer-col__link">Offers</a>
+          <a href="catering.html" class="footer-col__link">Catering &amp; parties</a>
+        </div>
+
+        <div class="footer-col footer-col--contact">
+          <span class="footer-col__label">SAY CIAO</span>
+          <a href="mailto:hello@ciaobello.pizza" class="footer-col__text">hello@ciaobello.pizza</a>
+          <a href="tel:+17185550148" class="footer-col__text">(718) 555-0148</a>
+          <p class="footer-col__text">182 DeGraw Street<br>Brooklyn, NY 11231</p>
+        </div>
+
+        <div class="footer-col footer-col--promise">
+          <span class="footer-col__label">MORE THAN A PIZZERIA</span>
+          <p class="footer-col__promise">Made in Brooklyn.<br>Raised on amore.</p>
+          <p class="footer-col__text">Tag your table: @ciaobellopizza</p>
+        </div>
+      </div>
+
+      <div class="footer-legal">
+        <span>&copy; <span data-current-year>2026</span> Ciao Bello Pizzeria. All slices reserved.</span>
+        <div class="footer-legal__policies">
+          <a href="contact.html">Privacy policy</a>
+          <a href="contact.html">Terms of use</a>
+          <a href="contact.html">Accessibility</a>
+        </div>
+        <span class="footer-legal__signoff">SEE YOU AT THE TABLE. ♡</span>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast-container" aria-live="polite" aria-atomic="true" data-toast-container></div>
+
+  <script type="module" src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,199 @@
+/* ==========================================================================
+   Order Online Page Styles ("Ciao Bello · Order online" 11:24438)
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. Ordering Setup ("Ordering setup" 1440×177)
+   -------------------------------------------------------------------------- */
+.ordering-setup {
+  width: 100%;
+  background-color: var(--color-cream);
+}
+
+.ordering-setup__inner {
+  max-width: var(--page-max-width);
+  margin: 0 auto;
+  padding: 0 var(--section-pad-x) 32px var(--section-pad-x);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.fulfillment-choice {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.fulfillment-tabs {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.fulfillment-choice__desc {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: var(--fw-regular);
+  line-height: 21.4px;
+  color: var(--color-taupe);
+}
+
+/* --------------------------------------------------------------------------
+   2. Ordering Workspace ("Ordering workspace" 1440×2088)
+   -------------------------------------------------------------------------- */
+.ordering-workspace {
+  width: 100%;
+  background-color: var(--color-cream);
+}
+
+.ordering-workspace__inner {
+  max-width: var(--page-max-width);
+  margin: 0 auto;
+  padding: 16px var(--section-pad-x) 72px var(--section-pad-x);
+  display: grid;
+  grid-template-columns: 850px 398px;
+  gap: 48px;
+  align-items: start;
+}
+
+.browse-menu-col {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.browse-menu__heading-lg {
+  font-family: var(--font-display);
+  font-size: 44px;
+  font-weight: var(--fw-regular);
+  line-height: 46.6px;
+  letter-spacing: -1px;
+  color: var(--color-tomato);
+}
+
+.browse-menu__heading-md {
+  font-family: var(--font-display);
+  font-size: 40px;
+  font-weight: var(--fw-regular);
+  line-height: 42.4px;
+  letter-spacing: -1px;
+  color: var(--color-tomato);
+}
+
+/* 2-Column Pizza Photo Selection */
+.order-pizza-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.order-pizza-card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.order-pizza-card__img {
+  width: 100%;
+  height: 270px;
+  object-fit: cover;
+  border-radius: var(--radius-card);
+}
+
+.order-pizza-card__top {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.order-pizza-card__name {
+  font-family: var(--font-display);
+  font-size: 28px;
+  font-weight: var(--fw-regular);
+  line-height: 30.8px;
+  color: var(--color-espresso);
+}
+
+.order-pizza-card__price {
+  font-family: var(--font-sans);
+  font-size: 18px;
+  font-weight: var(--fw-semibold);
+  line-height: 21.8px;
+  color: var(--color-tomato);
+}
+
+/* Horizontal Featured Pizza Row ("Funghi Town") */
+.order-pizza-feature-row {
+  border-top: 1px solid var(--color-sand);
+  padding: 24px 0;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.order-pizza-feature-row__img {
+  width: 240px;
+  height: 190px;
+  object-fit: cover;
+  border-radius: var(--radius-card);
+  flex-shrink: 0;
+}
+
+.order-pizza-feature-row__details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Stacked Menu Rows (Small plates, Sweet, Drinks) */
+.order-item-row {
+  border-top: 1px solid var(--color-sand);
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.order-item-row__copy {
+  max-width: 660px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.order-item-row__name {
+  font-family: var(--font-display);
+  font-size: 26px;
+  font-weight: var(--fw-regular);
+  line-height: 28.6px;
+  color: var(--color-espresso);
+}
+
+.order-item-row__desc {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: var(--fw-regular);
+  line-height: 23.1px;
+  color: var(--color-taupe);
+}
+
+.order-item-row__actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.order-item-row__price {
+  font-family: var(--font-sans);
+  font-size: 18px;
+  font-weight: var(--fw-semibold);
+  line-height: 21.8px;
+  color: var(--color-tomato);
+}

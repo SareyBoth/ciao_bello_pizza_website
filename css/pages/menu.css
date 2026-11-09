@@ -1,0 +1,258 @@
+/* ==========================================================================
+   Full Menu Page Styles ("Ciao Bello · Full menu" 11:24107)
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. Signature Pizzas Section ("Signature pizzas" 1440×1139)
+   -------------------------------------------------------------------------- */
+.menu-pizzas-section {
+  width: 100%;
+  background-color: var(--color-cream);
+}
+
+.menu-pizzas-section__inner {
+  max-width: var(--page-max-width);
+  margin: 0 auto;
+  padding: 64px var(--section-pad-x);
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.menu-section-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.menu-section-header__title {
+  font-family: var(--font-display);
+  font-size: 48px;
+  font-weight: var(--fw-regular);
+  line-height: 50.9px;
+  letter-spacing: -1px;
+  color: var(--color-tomato);
+}
+
+.menu-section-header__note {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: var(--fw-regular);
+  line-height: 15.7px;
+  color: var(--color-taupe);
+}
+
+/* Featured 3 Photo Cards */
+.menu-featured-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.menu-photo-card {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.menu-photo-card__media {
+  width: 100%;
+  height: 360px;
+  border-radius: var(--radius-card);
+  overflow: hidden;
+}
+
+.menu-photo-card__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--radius-card);
+  transition: transform var(--transition-base);
+}
+
+.menu-photo-card:hover .menu-photo-card__img {
+  transform: scale(1.02);
+}
+
+.menu-photo-card__details {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.menu-card-title-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.menu-photo-card__title {
+  font-family: var(--font-display);
+  font-size: 28px;
+  font-weight: var(--fw-regular);
+  line-height: 30.8px;
+  color: var(--color-espresso);
+}
+
+.menu-photo-card__title a:hover {
+  color: var(--color-tomato);
+}
+
+.menu-photo-card__price {
+  font-family: var(--font-sans);
+  font-size: 18px;
+  font-weight: var(--fw-semibold);
+  line-height: 21.8px;
+  color: var(--color-tomato);
+}
+
+.menu-card-desc {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: var(--fw-regular);
+  line-height: 23.1px;
+  color: var(--color-taupe);
+}
+
+.menu-card-tag {
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: var(--fw-semibold);
+  line-height: 13.3px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--color-taupe);
+}
+
+.menu-card-action {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: var(--fw-regular);
+  line-height: 16.9px;
+  color: var(--color-tomato);
+  background: none;
+  border: 0;
+  padding: 0;
+  text-align: left;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.menu-card-action:hover {
+  text-decoration: underline;
+}
+
+/* More Signature Pizzas (3 Text Cards) */
+.menu-more-pizzas-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.menu-text-card {
+  border-top: 1px solid var(--color-sand);
+  padding-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.menu-text-card__title {
+  font-family: var(--font-display);
+  font-size: 26px;
+  font-weight: var(--fw-regular);
+  line-height: 28.6px;
+  color: var(--color-espresso);
+}
+
+.menu-text-card__price {
+  font-family: var(--font-sans);
+  font-size: 17px;
+  font-weight: var(--fw-semibold);
+  line-height: 20.6px;
+  color: var(--color-tomato);
+}
+
+.menu-dietary-note {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: var(--fw-regular);
+  line-height: 21.4px;
+  color: var(--color-taupe);
+}
+
+/* --------------------------------------------------------------------------
+   2. Small Plates Section ("Small plates. Big smiles." 1440×535, #F8EBDC bg)
+   -------------------------------------------------------------------------- */
+.menu-sides-section {
+  width: 100%;
+  background-color: var(--color-parchment);
+}
+
+.menu-sides-section__inner {
+  max-width: var(--page-max-width);
+  margin: 0 auto;
+  padding: 64px var(--section-pad-x);
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.menu-sides-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 48px;
+  row-gap: 28px;
+}
+
+.menu-side-item {
+  border-top: 1px solid var(--color-sand);
+  padding-top: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* --------------------------------------------------------------------------
+   3. Desserts & Drinks Section ("Desserts and drinks" 1440×688)
+   -------------------------------------------------------------------------- */
+.menu-sweet-drinks-section {
+  width: 100%;
+  background-color: var(--color-cream);
+}
+
+.menu-sweet-drinks-section__inner {
+  max-width: var(--page-max-width);
+  margin: 0 auto;
+  padding: 64px var(--section-pad-x);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 80px;
+  align-items: start;
+}
+
+.menu-column-group {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.menu-line-item {
+  border-top: 1px solid var(--color-sand);
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.menu-allergen-footnote {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: var(--fw-regular);
+  line-height: 19.8px;
+  color: var(--color-taupe);
+}

@@ -1,0 +1,192 @@
+/* ==========================================================================
+   Contact Page Styles ("Ciao Bello · Contact" 11:26134)
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. Contact Options ("Contact options" 1440×272)
+   -------------------------------------------------------------------------- */
+.contact-options-section {
+  width: 100%;
+  background-color: var(--color-cream);
+}
+
+.contact-options-section__inner {
+  max-width: var(--page-max-width);
+  margin: 0 auto;
+  padding: 0 var(--section-pad-x) 64px var(--section-pad-x);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 36px;
+}
+
+.contact-channel {
+  border-top: 1px solid var(--color-sand);
+  padding-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.contact-channel__icon {
+  width: 28px;
+  height: 28px;
+}
+
+.contact-channel__title {
+  font-family: var(--font-display);
+  font-size: 32px;
+  font-weight: var(--fw-regular);
+  line-height: 33.9px;
+  letter-spacing: -1px;
+  color: var(--color-tomato);
+}
+
+.contact-channel__detail {
+  font-family: var(--font-sans);
+  font-size: 18px;
+  font-weight: var(--fw-regular);
+  line-height: 21.8px;
+  color: var(--color-tomato);
+}
+
+.contact-channel__detail a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.contact-channel__detail a:hover {
+  text-decoration: underline;
+}
+
+.contact-channel__desc {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: var(--fw-regular);
+  line-height: 23.1px;
+  color: var(--color-taupe);
+}
+
+/* --------------------------------------------------------------------------
+   2. Message Form and Store ("Message form and store" 1440×723, #F8EBDC bg)
+   -------------------------------------------------------------------------- */
+.message-form-store-section {
+  width: 100%;
+  background-color: var(--color-parchment);
+}
+
+.message-form-store-section__inner {
+  max-width: var(--page-max-width);
+  margin: 0 auto;
+  padding: 64px var(--section-pad-x);
+  display: grid;
+  grid-template-columns: 716px 500px;
+  gap: 80px;
+  align-items: start;
+}
+
+.contact-message-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.contact-message-form .form-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.contact-message-form__heading {
+  font-family: var(--font-display);
+  font-size: 48px;
+  font-weight: var(--fw-regular);
+  line-height: 50.9px;
+  letter-spacing: -1px;
+  color: var(--color-tomato);
+}
+
+.contact-message-form__note {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: var(--fw-regular);
+  line-height: 19.8px;
+  color: var(--color-taupe);
+}
+
+/* Right side Store Info in Contact */
+.contact-store-card {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.contact-store-card__img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: var(--radius-card);
+}
+
+.contact-store-card__title {
+  font-family: var(--font-display);
+  font-size: 34px;
+  font-weight: var(--fw-regular);
+  line-height: 36px;
+  letter-spacing: -1px;
+  color: var(--color-tomato);
+}
+
+.contact-store-card__addr {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  font-weight: var(--fw-regular);
+  line-height: 26.4px;
+  color: var(--color-espresso);
+}
+
+.contact-store-card__hours {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* --------------------------------------------------------------------------
+   3. Contact FAQs ("Contact FAQs" 1440×735)
+   -------------------------------------------------------------------------- */
+.contact-faqs-section {
+  width: 100%;
+  background-color: var(--color-cream);
+}
+
+.contact-faqs-section__inner {
+  max-width: var(--page-max-width);
+  margin: 0 auto;
+  padding: 72px var(--section-pad-x);
+  display: grid;
+  grid-template-columns: 420px 796px;
+  gap: 80px;
+  align-items: start;
+}
+
+.contact-faqs__intro {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.contact-faqs__heading {
+  font-family: var(--font-display);
+  font-size: 54px;
+  font-weight: var(--fw-regular);
+  line-height: 57.2px;
+  letter-spacing: -2.5px;
+  color: var(--color-tomato);
+}
+
+.contact-faqs__desc {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  font-weight: var(--fw-regular);
+  line-height: 26.4px;
+  color: var(--color-taupe);
+}

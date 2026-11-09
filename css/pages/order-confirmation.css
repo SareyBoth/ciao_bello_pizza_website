@@ -1,0 +1,289 @@
+/* ==========================================================================
+   Order Confirmation Page Styles ("Ciao Bello · Order confirmation" 11:26273)
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. Order Confirmation Introduction (1440×403)
+   -------------------------------------------------------------------------- */
+.confirmation-intro-section {
+  width: 100%;
+  background-color: var(--color-cream);
+  padding: 48px var(--section-pad-x);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 22px;
+}
+
+.confirmed-seal {
+  width: 76px;
+  height: 76px;
+  background-color: var(--color-tomato);
+  border-radius: var(--radius-pill);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.confirmed-seal__icon {
+  width: 36px;
+  height: 36px;
+}
+
+.confirmation-intro__headline {
+  font-family: var(--font-display);
+  font-size: 76px;
+  font-weight: var(--fw-regular);
+  line-height: 79px;
+  letter-spacing: -3px;
+  color: var(--color-tomato);
+}
+
+.confirmation-intro__desc {
+  font-family: var(--font-sans);
+  font-size: 18px;
+  font-weight: var(--fw-regular);
+  line-height: 29.7px;
+  color: var(--color-taupe);
+  max-width: 619px;
+}
+
+.confirmation-intro__meta {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: var(--fw-regular);
+  line-height: 21.4px;
+  color: var(--color-taupe);
+}
+
+/* --------------------------------------------------------------------------
+   2. Confirmed Order Workspace (1440×1590)
+   -------------------------------------------------------------------------- */
+.confirmed-workspace-section {
+  width: 100%;
+  background-color: var(--color-cream);
+}
+
+.confirmed-workspace-section__inner {
+  max-width: var(--page-max-width);
+  margin: 0 auto;
+  padding: 0 var(--section-pad-x) 72px var(--section-pad-x);
+  display: grid;
+  grid-template-columns: 850px 398px;
+  gap: 48px;
+  align-items: start;
+}
+
+.confirmed-main-col {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+/* Pickup Window Card */
+.pickup-window-card {
+  background-color: var(--color-parchment);
+  border-radius: var(--radius-card);
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.pickup-window-card__time {
+  font-family: var(--font-display);
+  font-size: 52px;
+  font-weight: var(--fw-regular);
+  line-height: 55.1px;
+  letter-spacing: -2.5px;
+  color: var(--color-tomato);
+}
+
+.pickup-window-card__addr {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  font-weight: var(--fw-regular);
+  line-height: 26.4px;
+  color: var(--color-espresso);
+}
+
+.pickup-window-card__instructions {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: var(--fw-regular);
+  line-height: 23.1px;
+  color: var(--color-taupe);
+}
+
+/* Order Progress Stages */
+.order-progress-card {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 16px 0;
+}
+
+.order-progress-card__title {
+  font-family: var(--font-display);
+  font-size: 36px;
+  font-weight: var(--fw-regular);
+  line-height: 38.2px;
+  letter-spacing: -1px;
+  color: var(--color-tomato);
+}
+
+.progress-stages-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+}
+
+.order-stage {
+  border-top: 3px solid var(--color-sand);
+  padding: 20px 18px 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.order-stage--completed {
+  border-top-color: var(--color-tomato);
+}
+
+.order-stage--current {
+  border-top-color: var(--color-tomato);
+}
+
+.order-stage__icon {
+  font-size: 22px;
+  line-height: 26.6px;
+  color: var(--color-taupe);
+}
+
+.order-stage--completed .order-stage__icon,
+.order-stage--current .order-stage__icon {
+  color: var(--color-tomato);
+}
+
+.order-stage__name {
+  font-family: var(--font-sans);
+  font-size: 15px;
+  font-weight: var(--fw-semibold);
+  line-height: 18.2px;
+  color: var(--color-taupe);
+}
+
+.order-stage--completed .order-stage__name,
+.order-stage--current .order-stage__name {
+  color: var(--color-tomato);
+}
+
+.order-stage__desc {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: var(--fw-regular);
+  line-height: 19.8px;
+  color: var(--color-taupe);
+}
+
+/* Pickup Guidance Row */
+.pickup-guidance-row {
+  display: grid;
+  grid-template-columns: 428px 390px;
+  gap: 32px;
+  align-items: center;
+}
+
+.pickup-guidance__copy {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.pickup-guidance__title {
+  font-family: var(--font-display);
+  font-size: 34px;
+  font-weight: var(--fw-regular);
+  line-height: 36px;
+  letter-spacing: -1px;
+  color: var(--color-tomato);
+}
+
+.pickup-guidance__desc {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: var(--fw-regular);
+  line-height: 23.1px;
+  color: var(--color-taupe);
+}
+
+.pickup-guidance__img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: var(--radius-card);
+}
+
+/* Order Support Box */
+.order-support-box {
+  border: 1px solid var(--color-sand);
+  border-radius: var(--radius-card);
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.order-support-box__icon {
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+}
+
+.order-support-box__copy {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.order-support-box__title {
+  font-family: var(--font-sans);
+  font-size: 15px;
+  font-weight: var(--fw-semibold);
+  line-height: 18.2px;
+  color: var(--color-espresso);
+}
+
+.order-support-box__desc {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: var(--fw-regular);
+  line-height: 21.4px;
+  color: var(--color-taupe);
+}
+
+/* Receipt Actions Row */
+.receipt-actions-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* --------------------------------------------------------------------------
+   3. Thank You Ribbon (1440×110, #C63627 bg)
+   -------------------------------------------------------------------------- */
+.thank-you-ribbon {
+  width: 100%;
+  background-color: var(--color-tomato);
+  padding: 32px var(--section-pad-x);
+  text-align: center;
+}
+
+.thank-you-ribbon__text {
+  font-family: var(--font-display);
+  font-size: 38px;
+  font-weight: var(--fw-regular);
+  line-height: 46.9px;
+  color: var(--color-cream);
+}

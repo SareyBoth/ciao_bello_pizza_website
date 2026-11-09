@@ -1,0 +1,253 @@
+/* ==========================================================================
+   Catering & Parties Page Styles ("Ciao Bello · Catering" 11:25956)
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. Catering Introduction ("Catering introduction" 1440×514)
+   -------------------------------------------------------------------------- */
+.catering-intro-section {
+  width: 100%;
+  background-color: var(--color-cream);
+}
+
+.catering-intro-section__inner {
+  max-width: var(--page-max-width);
+  margin: 0 auto;
+  padding: 0 var(--section-pad-x) 64px var(--section-pad-x);
+  display: grid;
+  grid-template-columns: 740px 492px;
+  gap: 64px;
+  align-items: center;
+}
+
+.catering-intro__img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  border-radius: var(--radius-card);
+}
+
+.catering-intro__copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 26px;
+}
+
+.catering-intro__heading {
+  font-family: var(--font-display);
+  font-size: 48px;
+  font-weight: var(--fw-regular);
+  line-height: 50.9px;
+  letter-spacing: -1px;
+  color: var(--color-tomato);
+}
+
+.catering-intro__desc {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  font-weight: var(--fw-regular);
+  line-height: 26.4px;
+  color: var(--color-taupe);
+}
+
+.catering-intro__note {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: var(--fw-regular);
+  line-height: 19.8px;
+  color: var(--color-taupe);
+}
+
+/* --------------------------------------------------------------------------
+   2. Catering Packages ("Catering packages" 1440×800, #F8EBDC bg)
+   -------------------------------------------------------------------------- */
+.catering-packages-section {
+  width: 100%;
+  background-color: var(--color-parchment);
+}
+
+.catering-packages-section__inner {
+  max-width: var(--page-max-width);
+  margin: 0 auto;
+  padding: 64px var(--section-pad-x);
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.catering-packages__heading {
+  font-family: var(--font-display);
+  font-size: 48px;
+  font-weight: var(--fw-regular);
+  line-height: 50.9px;
+  letter-spacing: -1px;
+  color: var(--color-tomato);
+}
+
+.packages-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  align-items: stretch;
+}
+
+.package-card {
+  border: 1px solid var(--color-sand);
+  border-radius: var(--radius-card);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.package-card__title {
+  font-family: var(--font-display);
+  font-size: 34px;
+  font-weight: var(--fw-regular);
+  line-height: 36px;
+  letter-spacing: -1px;
+  color: var(--color-tomato);
+}
+
+.package-card__price {
+  font-family: var(--font-display);
+  font-size: 50px;
+  font-weight: var(--fw-regular);
+  line-height: 61.7px;
+  color: var(--color-tomato);
+}
+
+.package-card__items {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  flex: 1;
+}
+
+.package-card__item {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: var(--fw-regular);
+  line-height: 21px;
+  color: var(--color-espresso);
+}
+
+.catering-packages__terms {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: var(--fw-regular);
+  line-height: 19.8px;
+  color: var(--color-taupe);
+}
+
+/* --------------------------------------------------------------------------
+   3. Catering Inquiry ("Catering inquiry" 1440×934)
+   -------------------------------------------------------------------------- */
+.catering-inquiry-section {
+  width: 100%;
+  background-color: var(--color-cream);
+}
+
+.catering-inquiry-section__inner {
+  max-width: var(--page-max-width);
+  margin: 0 auto;
+  padding: 72px var(--section-pad-x);
+  display: grid;
+  grid-template-columns: 420px 796px;
+  gap: 80px;
+  align-items: start;
+}
+
+.catering-inquiry__intro {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+.catering-inquiry__heading {
+  font-family: var(--font-display);
+  font-size: 54px;
+  font-weight: var(--fw-regular);
+  line-height: 57.2px;
+  letter-spacing: -2.5px;
+  color: var(--color-tomato);
+}
+
+.catering-inquiry__desc {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  font-weight: var(--fw-regular);
+  line-height: 26.4px;
+  color: var(--color-taupe);
+}
+
+.catering-inquiry__direct {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: var(--fw-regular);
+  line-height: 23.1px;
+  color: var(--color-taupe);
+}
+
+.catering-inquiry__note {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: var(--fw-regular);
+  line-height: 19.8px;
+  color: var(--color-taupe);
+}
+
+.catering-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.catering-form .form-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.catering-form__privacy {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: var(--fw-regular);
+  line-height: 19.8px;
+  color: var(--color-taupe);
+}
+
+/* --------------------------------------------------------------------------
+   4. Catering Questions ("Catering questions" 1440×501, #F8EBDC bg)
+   -------------------------------------------------------------------------- */
+.catering-questions-section {
+  width: 100%;
+  background-color: var(--color-parchment);
+}
+
+.catering-questions-section__inner {
+  max-width: var(--page-max-width);
+  margin: 0 auto;
+  padding: 64px var(--section-pad-x);
+  display: grid;
+  grid-template-columns: 420px 796px;
+  gap: 80px;
+  align-items: start;
+}
+
+.catering-questions__intro {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.catering-questions__heading {
+  font-family: var(--font-display);
+  font-size: 44px;
+  font-weight: var(--fw-regular);
+  line-height: 46.6px;
+  letter-spacing: -1px;
+  color: var(--color-tomato);
+}

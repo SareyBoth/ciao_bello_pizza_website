@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout — Ciao Bello Pizzeria</title>
+  <meta name="description" content="Complete your Ciao Bello Pizzeria pickup or delivery order.">
+  <link rel="icon" type="image/svg+xml" href="../assets/logos/slow-proofed-seal.svg">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/pages/checkout.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <div class="site-shell">
+    <!-- Top Welcome Announcement Bar -->
+    <div class="welcome-bar" role="region" aria-label="Store announcement">
+      <div class="welcome-bar__inner">
+        <span>A LITTLE NAPOLI. A LOT OF NEIGHBORHOOD. &nbsp;•&nbsp; OPEN DAILY FROM NOON</span>
+      </div>
+    </div>
+
+    <!-- Primary Site Header -->
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a href="../index.html" class="brand-wordmark" aria-label="Ciao Bello Pizzeria Home">ciao, bello!</a>
+
+        <nav class="primary-nav" aria-label="Primary navigation">
+          <a href="menu.html" class="nav-link">The menu</a>
+          <a href="about.html" class="nav-link">Our story</a>
+          <a href="stores.html" class="nav-link">Come on over</a>
+        </nav>
+
+        <div class="header-actions">
+          <a href="order-online.html" class="header-cta">
+            <span>Order online</span>
+            <span class="header-cta__arrow" aria-hidden="true">↗</span>
+          </a>
+          <button type="button" class="mobile-menu-btn" data-mobile-menu-toggle aria-expanded="false" aria-controls="mobile-drawer" aria-label="Open navigation menu">
+            <span class="mobile-menu-btn__bars" aria-hidden="true">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-drawer__backdrop" data-mobile-drawer-backdrop></div>
+    <aside id="mobile-drawer" class="mobile-drawer" aria-label="Mobile navigation" aria-hidden="true">
+      <div>
+        <div class="mobile-drawer__header">
+          <span class="brand-wordmark">ciao, bello!</span>
+          <button type="button" class="mobile-drawer__close" data-mobile-menu-close aria-label="Close navigation menu">✕</button>
+        </div>
+        <nav class="mobile-drawer__nav" aria-label="Mobile links">
+          <a href="../index.html" class="mobile-drawer__link">Home</a>
+          <a href="menu.html" class="mobile-drawer__link">The menu</a>
+          <a href="about.html" class="mobile-drawer__link">Our story</a>
+          <a href="stores.html" class="mobile-drawer__link">Come on over</a>
+          <a href="deals.html" class="mobile-drawer__link">Offers</a>
+          <a href="catering.html" class="mobile-drawer__link">Catering &amp; parties</a>
+          <a href="contact.html" class="mobile-drawer__link">Contact</a>
+          <a href="cart.html" class="mobile-drawer__link">Your cart (<span data-cart-count>5</span>)</a>
+        </nav>
+      </div>
+      <div class="mobile-drawer__footer">
+        <a href="cart.html" class="btn btn--outline btn--full">
+          <span>Back to cart</span>
+          <span class="btn__arrow" aria-hidden="true">↗</span>
+        </a>
+        <p class="text-xs">182 DeGraw Street, Brooklyn • Open daily from noon</p>
+      </div>
+    </aside>
+
+    <!-- Main Page Content -->
+    <main id="main-content" class="site-main">
+      <!-- Page Introduction ("Page introduction") -->
+      <section class="page-intro" aria-labelledby="page-heading">
+        <div class="page-intro__inner">
+          <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="../index.html">Home</a>
+            <span aria-hidden="true">/</span>
+            <a href="cart.html">Your cart</a>
+            <span aria-hidden="true">/</span>
+            <span>checkout</span>
+          </nav>
+          <span class="page-intro__label">CHECKOUT</span>
+          <h1 id="page-heading" class="page-intro__heading">One step closer to pizza.</h1>
+          <p class="page-intro__desc">A few details, a little anticipation, and dinner is sorted. No account needed.</p>
+        </div>
+      </section>
+
+      <!-- 1. Checkout Workspace ("Checkout workspace") -->
+      <section class="checkout-workspace" aria-label="Checkout form and order summary">
+        <div class="checkout-workspace__inner">
+          <!-- Left Column: Checkout Form -->
+          <form id="checkout-form" action="order-confirmation.html" class="checkout-form-col" data-checkout-form novalidate>
+            <!-- Checkout Progress -->
+            <div class="checkout-progress" aria-label="Checkout steps">
+              <a href="cart.html" class="checkout-progress__step checkout-progress__step--done">✓ Your cart</a>
+              <span class="checkout-progress__step checkout-progress__step--current" aria-current="step">02 &nbsp;Checkout</span>
+              <span class="checkout-progress__step">03 &nbsp;Pizza happiness</span>
+            </div>
+
+            <!-- Step 1: Who's joining us? -->
+            <div class="checkout-step-block">
+              <div class="checkout-step-heading">
+                <span class="checkout-step-number" aria-hidden="true">1</span>
+                <h2 class="checkout-step-title">Who’s joining us?</h2>
+              </div>
+
+              <div class="form-row-2">
+                <div class="form-field">
+                  <label for="checkout-first-name" class="form-label">First name *</label>
+                  <input type="text" id="checkout-first-name" name="firstName" class="form-input" value="Alex" required>
+                  <span class="form-error" data-error-for="checkout-first-name">Please enter your first name.</span>
+                </div>
+                <div class="form-field">
+                  <label for="checkout-last-name" class="form-label">Last name *</label>
+                  <input type="text" id="checkout-last-name" name="lastName" class="form-input" value="Morgan" required>
+                  <span class="form-error" data-error-for="checkout-last-name">Please enter your last name.</span>
+                </div>
+              </div>
+
+              <div class="form-field">
+                <label for="checkout-email" class="form-label">Email address *</label>
+                <input type="email" id="checkout-email" name="email" class="form-input" value="alex.morgan@example.com" required>
+                <span class="form-error" data-error-for="checkout-email">Please enter a valid email address.</span>
+              </div>
+
+              <div class="form-field">
+                <label for="checkout-phone" class="form-label">Mobile number *</label>
+                <input type="tel" id="checkout-phone" name="phone" class="form-input" value="(917) 555-0126" required>
+                <span class="form-error" data-error-for="checkout-phone">Please enter your mobile number.</span>
+              </div>
+
+              <p class="checkout-helper-note">We’ll use these details for your receipt and order updates only.</p>
+            </div>
+
+            <hr class="divider-sand">
+
+            <!-- Step 2: How will you get your pizza? -->
+            <div class="checkout-step-block">
+              <div class="checkout-step-heading">
+                <span class="checkout-step-number" aria-hidden="true">2</span>
+                <h2 class="checkout-step-title">How will you get your pizza?</h2>
+              </div>
+
+              <div class="fulfillment-tabs" role="group" aria-label="Fulfillment method">
+                <button type="button" class="btn btn--primary" data-fulfillment-mode="pickup" aria-pressed="true">
+                  <span data-fulfillment-btn-label="pickup">Pickup ✓</span>
+                  <span class="btn__arrow" aria-hidden="true">↗</span>
+                </button>
+                <button type="button" class="btn btn--outline" data-fulfillment-mode="delivery" aria-pressed="false">
+                  <span data-fulfillment-btn-label="delivery">Delivery</span>
+                  <span class="btn__arrow" aria-hidden="true">↗</span>
+                </button>
+              </div>
+
+              <div class="fulfillment-card">
+                <img src="../assets/icons/shopping-bag.svg" alt="" class="fulfillment-card__icon" width="28" height="28">
+                <div class="fulfillment-card__info">
+                  <span class="fulfillment-card__store" data-fulfillment-store-label>Pickup at Carroll Gardens</span>
+                  <span class="fulfillment-card__desc" data-fulfillment-window-label>182 DeGraw Street · Today, 7:00–7:15 pm</span>
+                </div>
+                <a href="stores.html" class="fulfillment-card__action">Change ↗</a>
+              </div>
+
+              <div class="form-row-2">
+                <div class="form-field">
+                  <label for="pickup-day" class="form-label">Pickup day *</label>
+                  <input type="text" id="pickup-day" name="pickupDay" class="form-input" value="Today · Monday, November 9" required>
+                </div>
+                <div class="form-field">
+                  <label for="pickup-window" class="form-label">Pickup window *</label>
+                  <input type="text" id="pickup-window" name="pickupWindow" class="form-input" value="7:00–7:15 pm  ⌄" required>
+                </div>
+              </div>
+
+              <p class="checkout-helper-note checkout-helper-note--md">Collect from the counter and give us your name. We’ll send a text when your order is ready. Need to change it? Call (718) 555-0148.</p>
+            </div>
+
+            <hr class="divider-sand">
+
+            <!-- Step 3: The little practical bit. -->
+            <div class="checkout-step-block">
+              <div class="checkout-step-heading">
+                <span class="checkout-step-number" aria-hidden="true">3</span>
+                <h2 class="checkout-step-title">The little practical bit.</h2>
+              </div>
+
+              <div class="payment-methods-grid" role="group" aria-label="Payment method">
+                <button type="button" class="option-row-btn is-selected" data-payment-method="card" aria-pressed="true">
+                  <span class="option-row-btn__left">
+                    <span class="option-row-btn__indicator" aria-hidden="true">◉</span>
+                    <span>Credit or debit card</span>
+                  </span>
+                </button>
+
+                <button type="button" class="option-row-btn" data-payment-method="wallet" aria-pressed="false">
+                  <span class="option-row-btn__left">
+                    <span class="option-row-btn__indicator" aria-hidden="true">○</span>
+                    <span>Apple Pay</span>
+                  </span>
+                </button>
+              </div>
+
+              <div class="form-field">
+                <label for="card-name" class="form-label">Name on card *</label>
+                <input type="text" id="card-name" name="cardName" class="form-input" value="Alex Morgan" required>
+                <span class="form-error" data-error-for="card-name">Please enter the name on your card.</span>
+              </div>
+
+              <div class="form-field">
+                <label for="card-number" class="form-label">Card number *</label>
+                <input type="text" id="card-number" name="cardNumber" class="form-input" value="••••  ••••  ••••  4242" required>
+                <span class="form-error" data-error-for="card-number">Please enter a valid card number.</span>
+              </div>
+
+              <div class="form-row-3">
+                <div class="form-field">
+                  <label for="card-exp" class="form-label">Expiration *</label>
+                  <input type="text" id="card-exp" name="cardExp" class="form-input" value="11 / 28" required>
+                </div>
+                <div class="form-field">
+                  <label for="card-cvc" class="form-label">Security code *</label>
+                  <input type="text" id="card-cvc" name="cardCvc" class="form-input" value="•••" required>
+                </div>
+                <div class="form-field">
+                  <label for="card-zip" class="form-label">Billing ZIP *</label>
+                  <input type="text" id="card-zip" name="cardZip" class="form-input" value="11231" required>
+                </div>
+              </div>
+
+              <span class="section-eyebrow">LEAVE A LITTLE AMORE FOR THE TEAM</span>
+
+              <div class="tip-options-grid" role="group" aria-label="Tip amount">
+                <button type="button" class="tip-pill-btn is-selected" data-tip-percent="0" aria-pressed="true">No tip ✓</button>
+                <button type="button" class="tip-pill-btn" data-tip-percent="10" aria-pressed="false">10%</button>
+                <button type="button" class="tip-pill-btn" data-tip-percent="15" aria-pressed="false">15%</button>
+                <button type="button" class="tip-pill-btn" data-tip-percent="20" aria-pressed="false">20%</button>
+                <button type="button" class="tip-pill-btn" data-tip-percent="other" aria-pressed="false">Other</button>
+              </div>
+
+              <div class="payment-security-row">
+                <img src="../assets/icons/lock-keyhole.svg" alt="" width="16" height="16">
+                <span class="checkout-helper-note">Encrypted payment. Your card details are never stored by Ciao Bello.</span>
+              </div>
+            </div>
+
+            <p class="checkout-helper-note">By placing your order, you agree to our Terms of use and Privacy policy. Please double-check your pickup time; we prepare every pizza fresh.</p>
+
+            <button type="submit" class="btn btn--primary btn--full">
+              <span>Place pickup order · <span data-summary-btn-total>$59.88</span></span>
+              <span class="btn__arrow" aria-hidden="true">↗</span>
+            </button>
+          </form>
+
+          <!-- Right Column: Order Summary Card -->
+          <aside class="order-summary-card" aria-label="Your order summary">
+            <span class="order-summary-card__label">A LITTLE BOX OF HAPPINESS</span>
+            <h2 class="order-summary-card__title">Your order</h2>
+            <p class="order-summary-card__fulfillment" data-summary-fulfillment>Pickup · Carroll Gardens
+Today, 7:00–7:15 pm</p>
+
+            <hr class="divider-sand">
+
+            <div class="order-summary-items" data-summary-items>
+              <div class="order-summary-item">
+                <div class="order-summary-item__row">
+                  <span class="order-summary-item__name">1 × The Margherita</span>
+                  <span class="order-summary-item__price">$21.00</span>
+                </div>
+                <span class="order-summary-item__meta">12” · Classic crust · Extra fior di latte +$3</span>
+              </div>
+
+              <div class="order-summary-item">
+                <div class="order-summary-item__row">
+                  <span class="order-summary-item__name">1 × Hot Honey, Amore</span>
+                  <span class="order-summary-item__price">$23.00</span>
+                </div>
+                <span class="order-summary-item__meta">12” · Classic crust · No extras</span>
+              </div>
+
+              <div class="order-summary-item">
+                <div class="order-summary-item__row">
+                  <span class="order-summary-item__name">1 × Garlic knots</span>
+                  <span class="order-summary-item__price">$8.00</span>
+                </div>
+                <span class="order-summary-item__meta">6 pieces · Marinara on the side</span>
+              </div>
+
+              <div class="order-summary-item">
+                <div class="order-summary-item__row">
+                  <span class="order-summary-item__name">2 × Italian soda</span>
+                  <span class="order-summary-item__price">$8.00</span>
+                </div>
+                <span class="order-summary-item__meta">Blood orange · 330 ml · $4 each</span>
+              </div>
+            </div>
+
+            <hr class="divider-sand">
+
+            <div class="order-summary-breakdown">
+              <div class="price-row">
+                <span class="price-row__label">Subtotal</span>
+                <span class="price-row__amount" data-summary-subtotal>$60.00</span>
+              </div>
+              <div class="price-row" data-summary-discount-row>
+                <span class="price-row__label" data-summary-discount-label>CIAO5 · Welcome discount</span>
+                <span class="price-row__amount" data-summary-discount>−$5.00</span>
+              </div>
+              <div class="price-row">
+                <span class="price-row__label" data-summary-delivery-label>Pickup</span>
+                <span class="price-row__amount" data-summary-delivery>Free</span>
+              </div>
+              <div class="price-row">
+                <span class="price-row__label">NY sales tax · 8.875%</span>
+                <span class="price-row__amount" data-summary-tax>$4.88</span>
+              </div>
+              <div class="price-row">
+                <span class="price-row__label">Tip</span>
+                <span class="price-row__amount" data-summary-tip>$0.00</span>
+              </div>
+            </div>
+
+            <hr class="divider-sand">
+
+            <div class="price-row price-row--total">
+              <span class="price-row__label">Total</span>
+              <span class="price-row__amount" data-summary-total>$59.88</span>
+            </div>
+
+            <button type="submit" form="checkout-form" class="btn btn--primary btn--full">
+              <span>Place order · <span data-summary-btn-total>$59.88</span></span>
+              <span class="btn__arrow" aria-hidden="true">↗</span>
+            </button>
+
+            <p class="order-summary-card__note">Prices in USD. Prepared fresh at 182 DeGraw Street, Brooklyn, NY 11231.</p>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <!-- Global Footer ("Ciao for now") -->
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <a href="../index.html" class="footer-brand__wordmark">ciao, bello!</a>
+            <p class="footer-brand__desc">Your corner. Your people. Your pizza.<br>A little more amore in every day.</p>
+            <div class="footer-brand__socials">
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+              <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer">TikTok ↗</a>
+            </div>
+          </div>
+
+          <div class="footer-col footer-col--explore">
+            <span class="footer-col__label">COME HUNGRY</span>
+            <a href="order-online.html" class="footer-col__link">Order online</a>
+            <a href="menu.html" class="footer-col__link">The menu</a>
+            <a href="about.html" class="footer-col__link">Our story</a>
+            <a href="catering.html" class="footer-col__link">Catering &amp; parties</a>
+            <a href="deals.html" class="footer-col__link">Offers</a>
+            <a href="contact.html" class="footer-col__link">Contact</a>
+          </div>
+
+          <div class="footer-col footer-col--contact">
+            <span class="footer-col__label">SAY CIAO</span>
+            <a href="mailto:hello@ciaobello.pizza" class="footer-col__text">hello@ciaobello.pizza</a>
+            <a href="tel:+17185550148" class="footer-col__text">(718) 555-0148</a>
+            <p class="footer-col__text">182 DeGraw Street<br>Brooklyn, NY 11231</p>
+          </div>
+
+          <div class="footer-col footer-col--promise">
+            <span class="footer-col__label">MORE THAN A PIZZERIA</span>
+            <p class="footer-col__promise">Made in Brooklyn.<br>Raised on amore.</p>
+            <p class="footer-col__text">See you at the table.</p>
+          </div>
+        </div>
+
+        <div class="footer-legal">
+          <span>© <span data-current-year>2026</span> Ciao Bello Pizzeria. All slices reserved.</span>
+          <div class="footer-legal__policies">
+            <a href="contact.html">Privacy policy</a>
+            <a href="contact.html">Terms of use</a>
+            <a href="contact.html">Allergen info</a>
+          </div>
+          <span class="footer-legal__signoff">SEE YOU AT THE TABLE. ♡</span>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script type="module" src="../js/main.js"></script>
+</body>
+</html>

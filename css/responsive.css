@@ -1,0 +1,832 @@
+/* ==========================================================================
+   Responsive Breakpoints & Fluid Reflow — Ciao Bello Pizzeria
+   Supports: 1920px, 1440px, 1280px, 1024px, 768px, 430px, 375px, 320px
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Sub-1440px Desktop / Laptop (1025px – 1439px)
+   Keep exact 1440px pixel-locked grids at >=1440px; use proportional fluid
+   columns on 1280px and 1024px screens so zero horizontal overflow occurs.
+   -------------------------------------------------------------------------- */
+@media (max-width: 1439px) {
+  :root {
+    --section-pad-x: clamp(24px, 3.5vw, 48px);
+  }
+
+  .home-hero__inner {
+    grid-template-columns: minmax(0, 1.07fr) minmax(0, 1fr);
+  }
+
+  .home-dough-story__inner,
+  .neighborhood-welcome-section__inner,
+  .story-craft-section__inner {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  }
+
+  .home-table-section__inner,
+  .featured-store-map-grid {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr);
+    gap: 32px;
+  }
+
+  .store-intro-section__inner {
+    grid-template-columns: minmax(0, 1.45fr) minmax(0, 1fr);
+    gap: 32px;
+  }
+
+  .getting-here-section__inner {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.86fr);
+    gap: 32px;
+  }
+
+  .welcome-offer-section__inner {
+    grid-template-columns: minmax(0, 1.23fr) minmax(0, 1fr);
+    gap: 32px;
+  }
+
+  .bundle-list-grid,
+  .packages-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+  }
+
+  .founders-section__inner {
+    grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+    gap: 32px;
+  }
+
+  .people-place-section__inner {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.28fr);
+    gap: 32px;
+  }
+
+  .catering-intro-section__inner {
+    grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
+    gap: 32px;
+  }
+
+  .catering-inquiry-section__inner,
+  .catering-questions-section__inner,
+  .visit-questions-section__inner,
+  .offer-questions-section__inner,
+  .contact-faqs-section__inner {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.9fr);
+    gap: 40px;
+  }
+
+  .message-form-store-section__inner {
+    grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+    gap: 40px;
+  }
+
+  .confirmed-workspace-section__inner {
+    grid-template-columns: minmax(0, 1fr) 380px;
+    gap: 32px;
+  }
+
+  .pickup-guidance-row {
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+    gap: 24px;
+  }
+
+  .product-detail-section__inner {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.08fr);
+    gap: 32px;
+  }
+
+  .cart-workspace__inner,
+  .checkout-workspace__inner {
+    grid-template-columns: minmax(0, 1fr) 380px;
+    gap: 32px;
+  }
+
+  .story-craft__inner,
+  .catering-trays-section__inner,
+  .pickup-guide-card {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .product-showcase__inner {
+    grid-template-columns: minmax(0, 48%) minmax(0, 52%);
+    gap: var(--space-40);
+  }
+
+  .order-summary-card {
+    width: 400px;
+  }
+
+  .stores-finder__inner {
+    grid-template-columns: 400px minmax(0, 1fr);
+  }
+
+  .flagship-store-card {
+    grid-template-columns: 55% 45%;
+  }
+
+  .store-hero__inner,
+  .catering-hero__inner {
+    grid-template-columns: 51.4% 48.6%;
+  }
+
+  .store-directions__inner {
+    grid-template-columns: 56% 44%;
+  }
+
+  .hero-bundle-card {
+    grid-template-columns: 47% 53%;
+  }
+
+  .story-hero__inner {
+    grid-template-columns: 54% 46%;
+  }
+
+  .story-timeline-section__inner {
+    grid-template-columns: 44% 56%;
+    gap: var(--space-40);
+  }
+
+  .catering-inquiry__inner {
+    grid-template-columns: 380px minmax(0, 1fr);
+    gap: var(--space-40);
+  }
+
+  .contact-workspace__inner {
+    grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+    gap: var(--space-40);
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Tablet Landscape & Small Laptop (max-width: 1120px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 1120px) {
+  :root {
+    --section-pad-x: 32px;
+  }
+
+  /* Switch header to mobile/tablet drawer navigation */
+  .primary-nav {
+    display: none;
+  }
+
+  .site-header__inner {
+    height: 80px;
+  }
+
+  .header-actions {
+    margin-left: auto;
+    gap: var(--space-12);
+  }
+
+  .mobile-menu-btn {
+    display: inline-flex;
+  }
+
+  /* Stack major split sections */
+  .home-hero__inner,
+  .home-dough-story__inner,
+  .home-table-section__inner,
+  .product-showcase__inner,
+  .cart-workspace__inner,
+  .checkout-workspace__inner,
+  .confirm-workspace__inner,
+  .stores-finder__inner,
+  .flagship-store-card,
+  .store-hero__inner,
+  .store-directions__inner,
+  .hero-bundle-card,
+  .story-hero__inner,
+  .story-craft__inner,
+  .story-timeline-section__inner,
+  .catering-hero__inner,
+  .catering-trays-section__inner,
+  .catering-inquiry__inner,
+  .contact-workspace__inner {
+    grid-template-columns: 1fr;
+  }
+
+  .home-hero__message,
+  .home-table-section__details,
+  .story-hero__copy,
+  .catering-hero__copy {
+    border-right: none;
+    border-bottom: 1px solid var(--color-tomato);
+    padding: 48px var(--section-pad-x);
+  }
+
+  .store-hero__details {
+    border-left: none;
+    border-top: 1px solid var(--color-tomato);
+    padding: 48px var(--section-pad-x);
+  }
+
+  .home-dough-story__copy,
+  .story-craft__content {
+    padding: 48px var(--section-pad-x);
+  }
+
+  .home-hero__media,
+  .home-dough-story__media,
+  .home-table-section__media,
+  .store-hero__media,
+  .story-hero__media,
+  .story-craft__media,
+  .catering-hero__media {
+    height: 460px;
+  }
+
+  .order-summary-card,
+  .intro-info-card,
+  .intro-info-card--wide,
+  .confirm-eta-card {
+    width: 100%;
+  }
+
+  .page-intro--split .page-intro__inner,
+  .confirm-hero__inner,
+  .cta-banner__inner,
+  .footer-top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-top {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-32);
+  }
+
+  .footer-brand,
+  .site-footer--home .footer-brand {
+    grid-column: 1 / -1;
+    width: 100%;
+    max-width: 520px;
+  }
+
+  /* 3-col and 4-col card grids reflow to 2-col */
+  .home-pizza-grid,
+  .home-reviews__grid,
+  .home-service-ways__grid,
+  .menu-featured__grid,
+  .product-pairings__grid,
+  .order-featured__grid,
+  .store-amenities__grid,
+  .store-specials__grid,
+  .deals-bundles__grid,
+  .deals-rituals__grid,
+  .story-purveyors__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Tablet Portrait & Large Phones (max-width: 768px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 768px) {
+  :root {
+    --section-pad-x: 20px;
+  }
+
+  .welcome-bar__inner {
+    flex-direction: column;
+    text-align: center;
+    gap: 4px;
+    padding: 8px 16px;
+  }
+
+  .welcome-bar__inner span:nth-child(2) {
+    display: none;
+  }
+
+  /* Typography Scaling */
+  .home-hero__headline,
+  .heading-hero {
+    font-size: clamp(48px, 11vw, 72px);
+    line-height: 0.96;
+    letter-spacing: -2px;
+  }
+
+  .heading-page,
+  .page-intro__heading,
+  .story-hero__title,
+  .catering-hero__title,
+  .order-intro__heading,
+  .cart-intro__heading,
+  .checkout-intro__heading,
+  .store-hero__title,
+  .product-header__title {
+    font-size: clamp(40px, 9vw, 56px);
+    line-height: 1.05;
+    letter-spacing: -1.5px;
+  }
+
+  .heading-section-lg,
+  .heading-section-md,
+  .heading-section-sm,
+  .dinner-sorted__title,
+  .dinner-sorted--home .dinner-sorted__title,
+  .home-dough-story__heading,
+  .home-signature-menu__heading,
+  .home-service-ways__heading,
+  .home-reviews__heading,
+  .home-table-section__heading,
+  .story-craft__title,
+  .story-purveyors__title,
+  .hero-bundle-card__title {
+    font-size: clamp(34px, 7.5vw, 48px);
+    line-height: 1.08;
+    letter-spacing: -1.5px;
+  }
+
+  .faq-intro__heading,
+  .faq-split-section--home .faq-intro__heading {
+    font-size: clamp(30px, 7vw, 48px);
+    line-height: 1.08;
+    letter-spacing: -1.5px;
+  }
+
+  .menu-category-header__title,
+  .home-menu .menu-category-header__title,
+  .order-menu-list .menu-category-header__title,
+  .menu-featured__heading,
+  .product-pairings__heading,
+  .store-amenities__title,
+  .store-directions__title,
+  .story-founders-col__title,
+  .catering-inquiry__title,
+  .flagship-store-card__title {
+    font-size: clamp(30px, 6.5vw, 40px);
+    line-height: 1.12;
+  }
+
+  /* Collapse 2-col grids to 1-col */
+  .menu-grid-2col,
+  .home-pizza-grid,
+  .home-reviews__grid,
+  .home-service-ways__grid,
+  .home-good-stuff__inner,
+  .menu-featured__grid,
+  .product-pairings__grid,
+  .order-featured__grid,
+  .secondary-stores-grid,
+  .store-amenities__grid,
+  .store-specials__grid,
+  .deals-bundles__grid,
+  .deals-rituals__grid,
+  .story-purveyors__grid,
+  .provenance-grid,
+  .cart-upsells__grid,
+  .fulfillment-cards-grid,
+  .form-row,
+  .form-row--3col,
+  .pickup-guide-card,
+  .tracker-steps-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Section Headers stack cleanly */
+  .home-signature-menu__header,
+  .home-category-bar,
+  .home-service-ways__header,
+  .home-reviews__header,
+  .menu-featured__header,
+  .product-pairings__header,
+  .order-intro__top,
+  .order-featured__header,
+  .cart-intro__bottom,
+  .checkout-intro__bottom,
+  .store-specials__header,
+  .deals-bundles__header,
+  .story-purveyors__header,
+  .fulfillment-bar__inner,
+  .menu-category-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-14);
+  }
+
+  .home-reviews__summary {
+    align-items: flex-start;
+  }
+
+  /* FAQ side-by-side layout stacks on tablet */
+  .faq-split-section__inner,
+  .faq-split-section--home .faq-split-section__inner {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .faq-intro,
+  .faq-split-section--home .faq-intro {
+    width: 100%;
+  }
+
+  /* Section Vertical Padding adjustments */
+  .home-signature-menu__inner,
+  .home-reviews__inner,
+  .full-menu-listing__inner,
+  .product-showcase__inner,
+  .product-pairings__inner,
+  .order-menu-list__inner,
+  .cart-workspace__inner,
+  .checkout-workspace__inner,
+  .confirm-workspace__inner,
+  .stores-directory__inner,
+  .store-amenities__inner,
+  .store-specials__inner,
+  .store-directions__inner,
+  .deals-bundles__inner,
+  .deals-rituals__inner,
+  .story-purveyors__inner,
+  .story-timeline-section__inner,
+  .catering-trays-section__inner,
+  .catering-inquiry__inner,
+  .contact-workspace__inner,
+  .dinner-sorted__inner,
+  .dinner-sorted--home .dinner-sorted__inner {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
+  .product-hero-frame {
+    height: 400px;
+  }
+
+  .home-hero__media,
+  .home-dough-story__media,
+  .home-table-section__media,
+  .store-hero__media,
+  .story-hero__media,
+  .story-craft__media,
+  .catering-hero__media,
+  .flagship-store-card__media,
+  .hero-bundle-card__media {
+    height: 360px;
+  }
+
+  .flagship-store-card__body,
+  .hero-bundle-card__copy,
+  .catering-form-card,
+  .contact-form-card,
+  .order-summary-card,
+  .tracker-card {
+    padding: 24px 20px;
+  }
+
+  .tip-pills-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .footer-legal {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-16);
+  }
+
+  .footer-brand__socials {
+    flex-wrap: wrap;
+    gap: var(--space-16);
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Small Mobile Viewports (320px – 480px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 480px) {
+  :root {
+    --section-pad-x: 16px;
+  }
+
+  .site-header__inner {
+    height: 72px;
+  }
+
+  .brand-wordmark {
+    font-size: 28px;
+    line-height: 34px;
+  }
+
+  .header-cta span {
+    display: none;
+  }
+
+  .header-cta {
+    padding: 0 16px;
+    gap: 0;
+  }
+
+  .home-hero__service,
+  .story-hero__stats {
+    gap: var(--space-20);
+    flex-wrap: wrap;
+  }
+
+  .home-hero__seal {
+    width: 88px;
+    height: 88px;
+    top: 16px;
+    right: 16px;
+  }
+
+  .home-hero__seal .dough-seal__top {
+    font-size: 7px;
+  }
+
+  .home-hero__seal .dough-seal__value {
+    font-size: 28px;
+    line-height: 34px;
+  }
+
+  .home-hero__seal .dough-seal__bottom {
+    font-size: 7px;
+  }
+
+  .home-hero__caption,
+  .store-hero__status-bar,
+  .story-hero__caption,
+  .catering-hero__bar,
+  .home-table-section__badge {
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+    padding: 12px 14px;
+    border-radius: var(--radius-card);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .size-options-grid,
+  .extras-grid,
+  .store-meta-grid,
+  .store-hero__info-grid,
+  .dept-emails-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .product-submit-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .qty-stepper--lg {
+    width: 100%;
+  }
+
+  .cart-item {
+    flex-direction: column;
+  }
+
+  .cart-item__thumb {
+    width: 100%;
+    height: 180px;
+  }
+
+  .cart-fulfillment-banner,
+  .selected-store-box,
+  .ticket-note-box {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .dinner-sorted__actions,
+  .home-hero__actions,
+  .store-hero__actions,
+  .catering-hero__actions,
+  .flagship-store-card__actions,
+  .secondary-store-card__actions {
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .dinner-sorted__actions .btn,
+  .home-hero__actions .btn,
+  .store-hero__actions .btn,
+  .catering-hero__actions .btn {
+    width: 100%;
+  }
+
+  .active-cart-pill {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .mode-switch {
+    width: 100%;
+    display: flex;
+  }
+
+  .mode-switch__btn {
+    flex: 1;
+    padding: 8px 10px;
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .tip-pills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* ==========================================================================
+   Comprehensive Page-Specific Responsive Enhancements
+   ========================================================================== */
+
+@media (max-width: 1024px) {
+  .primary-nav {
+    display: none !important;
+  }
+
+  .mobile-menu-btn {
+    display: flex !important;
+  }
+
+  .home-hero__inner,
+  .home-dough-story__inner,
+  .home-table-section__inner,
+  .product-detail-section__inner,
+  .cart-workspace__inner,
+  .checkout-workspace__inner,
+  .featured-store-map-grid,
+  .neighborhood-welcome-section__inner,
+  .store-intro-section__inner,
+  .getting-here-section__inner,
+  .visit-questions-section__inner,
+  .welcome-offer-section__inner,
+  .offer-questions-section__inner,
+  .founders-section__inner,
+  .story-craft-section__inner,
+  .people-place-section__inner,
+  .catering-intro-section__inner,
+  .catering-inquiry-section__inner,
+  .catering-questions-section__inner,
+  .message-form-store-section__inner,
+  .contact-faqs-section__inner,
+  .confirmed-workspace-section__inner {
+    grid-template-columns: 1fr !important;
+    gap: 40px !important;
+  }
+
+  .experience-list-grid,
+  .principles-list-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 32px !important;
+  }
+
+  .bundle-list-grid,
+  .packages-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .founders-note-section__inner {
+    padding: 48px var(--section-pad-x) !important;
+  }
+
+  .story-craft__copy,
+  .neighborhood-welcome__copy {
+    padding: 40px 0 !important;
+  }
+
+  .neighborhood-welcome__img,
+  .story-craft__img,
+  .store-intro__img,
+  .founders__img,
+  .catering-intro__img,
+  .welcome-offer__img,
+  .people-place__img {
+    height: 400px !important;
+  }
+
+  .neighborhood-map {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 360px !important;
+  }
+
+  .footer-top {
+    flex-direction: column !important;
+    gap: 40px !important;
+  }
+
+  .footer-col {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .future-stores-grid,
+  .contact-options-section__inner,
+  .pickup-guidance-row,
+  .product-pairings-grid {
+    grid-template-columns: 1fr !important;
+    gap: 32px !important;
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr !important;
+    gap: 32px !important;
+  }
+
+  .prefooter-banner__inner {
+    flex-direction: column !important;
+    text-align: center !important;
+    gap: 24px !important;
+  }
+
+  .prefooter-banner__title,
+  .closing-invitation__headline {
+    font-size: clamp(38px, 8vw, 54px) !important;
+    line-height: 1.1 !important;
+  }
+
+  .page-intro__title,
+  .page-intro__heading,
+  .confirmation-intro__headline {
+    font-size: clamp(42px, 9vw, 60px) !important;
+    line-height: 1.05 !important;
+  }
+
+  .cart-item-row {
+    grid-template-columns: 80px 1fr !important;
+    gap: 16px !important;
+  }
+
+  .cart-item-row__right {
+    grid-column: 1 / -1 !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+  }
+
+  .cart-promo-row,
+  .location-search-bar {
+    flex-direction: column !important;
+    align-items: stretch !important;
+  }
+
+  .location-search-bar .btn,
+  .cart-promo-row .btn {
+    width: 100% !important;
+  }
+
+  .form-row,
+  .form-row-2,
+  .catering-form .form-row,
+  .contact-message-form .form-row {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+
+  .progress-stages-grid {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+
+  .order-stage {
+    padding-top: 12px !important;
+  }
+
+  .receipt-actions-row {
+    flex-direction: column !important;
+    width: 100% !important;
+  }
+
+  .receipt-actions-row .btn {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .experience-list-grid,
+  .principles-list-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .open-store-card__actions {
+    flex-direction: column !important;
+  }
+
+  .open-store-card__actions .btn {
+    width: 100% !important;
+  }
+
+  .footer-legal {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 12px !important;
+  }
+
+  .header-actions .header-cart-link span {
+    display: none;
+  }
+
+  .header-actions .header-cart-link::after {
+    content: " (" attr(data-cart-count) ")";
+  }
+}

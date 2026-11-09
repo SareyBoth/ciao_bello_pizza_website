@@ -1,0 +1,199 @@
+/* ==========================================================================
+   Cart Page Styles ("Ciao Bello · Your cart" 11:24642)
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. Cart Workspace ("Cart workspace" 1440×1411)
+   -------------------------------------------------------------------------- */
+.cart-workspace {
+  width: 100%;
+  background-color: var(--color-cream);
+}
+
+.cart-workspace__inner {
+  max-width: var(--page-max-width);
+  margin: 0 auto;
+  padding: 0 var(--section-pad-x) 72px var(--section-pad-x);
+  display: grid;
+  grid-template-columns: 850px 398px;
+  gap: 48px;
+  align-items: start;
+}
+
+.cart-contents-col {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.basket-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.basket-header__title {
+  font-family: var(--font-display);
+  font-size: 36px;
+  font-weight: var(--fw-regular);
+  line-height: 38.2px;
+  letter-spacing: -1px;
+  color: var(--color-tomato);
+}
+
+.basket-header__count {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: var(--fw-regular);
+  line-height: 15.7px;
+  color: var(--color-taupe);
+}
+
+/* Cart Item List */
+.cart-items-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.cart-item-row {
+  border-top: 1px solid var(--color-sand);
+  padding: 22px 0;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.cart-item-row__thumb {
+  width: 112px;
+  height: 112px;
+  border-radius: var(--radius-card);
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.cart-item-row__icon-thumb {
+  width: 112px;
+  height: 112px;
+  border-radius: var(--radius-card);
+  background-color: var(--color-parchment);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.cart-item-row__icon-thumb img {
+  width: 42px;
+  height: 42px;
+}
+
+.cart-item-row__details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cart-item-row__name {
+  font-family: var(--font-display);
+  font-size: 27px;
+  font-weight: var(--fw-regular);
+  line-height: 33.3px;
+  color: var(--color-espresso);
+}
+
+.cart-item-row__meta {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: var(--fw-regular);
+  line-height: 19.8px;
+  color: var(--color-taupe);
+}
+
+.cart-item-row__actions {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: var(--fw-regular);
+  line-height: 14.5px;
+  color: var(--color-tomato);
+}
+
+.cart-item-row__link {
+  color: var(--color-tomato);
+  background: none;
+  border: 0;
+  padding: 0;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+}
+
+.cart-item-row__link:hover {
+  text-decoration: underline;
+}
+
+.cart-item-row__right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 18px;
+  flex-shrink: 0;
+}
+
+.cart-item-row__price {
+  font-family: var(--font-sans);
+  font-size: 18px;
+  font-weight: var(--fw-semibold);
+  line-height: 21.8px;
+  color: var(--color-tomato);
+}
+
+/* Promo Code Row */
+.cart-promo-row {
+  display: flex;
+  align-items: flex-end;
+  gap: 16px;
+}
+
+.cart-promo-row .form-field {
+  flex: 1;
+}
+
+.cart-promo-msg {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: var(--fw-regular);
+  line-height: 21.4px;
+  color: var(--color-olive);
+}
+
+/* --------------------------------------------------------------------------
+   2. Order Reassurance Band ("Order reassurance" 1440×95, #F8EBDC bg)
+   -------------------------------------------------------------------------- */
+.order-reassurance {
+  width: 100%;
+  background-color: var(--color-parchment);
+}
+
+.order-reassurance__inner {
+  max-width: var(--page-max-width);
+  margin: 0 auto;
+  padding: 32px var(--section-pad-x);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.order-reassurance__promise {
+  font-family: var(--font-display);
+  font-size: 25px;
+  font-weight: var(--fw-regular);
+  line-height: 30.8px;
+  color: var(--color-tomato);
+}

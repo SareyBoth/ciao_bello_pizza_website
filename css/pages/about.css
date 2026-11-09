@@ -1,0 +1,337 @@
+/* ==========================================================================
+   Our Story / About Page Styles ("Ciao Bello · Our story" 11:25293)
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. Founders and Beginnings ("Founders and beginnings" 1440×672)
+   -------------------------------------------------------------------------- */
+.founders-section {
+  width: 100%;
+  background-color: var(--color-cream);
+}
+
+.founders-section__inner {
+  max-width: var(--page-max-width);
+  margin: 0 auto;
+  padding: 0 var(--section-pad-x) 72px var(--section-pad-x);
+  display: grid;
+  grid-template-columns: 660px 572px;
+  gap: 64px;
+  align-items: center;
+}
+
+.founders__img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  border-radius: var(--radius-card);
+}
+
+.founders__copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 26px;
+}
+
+.founders__heading {
+  font-family: var(--font-display);
+  font-size: 54px;
+  font-weight: var(--fw-regular);
+  line-height: 57.2px;
+  letter-spacing: -1.5px;
+  color: var(--color-tomato);
+}
+
+.founders__body {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  font-weight: var(--fw-regular);
+  line-height: 26.4px;
+  color: var(--color-taupe);
+}
+
+.founders__signoff {
+  font-family: var(--font-display);
+  font-size: 34px;
+  font-style: italic;
+  font-weight: var(--fw-regular);
+  line-height: 36px;
+  color: var(--color-tomato);
+  margin-top: 6px;
+}
+
+.founders__role {
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: var(--fw-semibold);
+  line-height: 15.4px;
+  letter-spacing: 1.6px;
+  color: var(--color-tomato);
+}
+
+/* --------------------------------------------------------------------------
+   2. Brand Ribbon ("Brand ribbon" 1440×85, #C63627 bg)
+   -------------------------------------------------------------------------- */
+.brand-ribbon-bar {
+  width: 100%;
+  background-color: var(--color-tomato);
+  padding: 24px var(--section-pad-x);
+  overflow: hidden;
+}
+
+.brand-ribbon-bar__inner {
+  max-width: var(--page-max-width);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.brand-ribbon-bar__text {
+  font-family: var(--font-display);
+  font-size: 30px;
+  font-weight: var(--fw-regular);
+  line-height: 37px;
+  color: var(--color-cream);
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}
+
+/* --------------------------------------------------------------------------
+   3. Our Craft ("Our craft" 1440×680, #F8EBDC bg)
+   -------------------------------------------------------------------------- */
+.story-craft-section {
+  width: 100%;
+  background-color: var(--color-parchment);
+}
+
+.story-craft-section__inner {
+  max-width: var(--page-max-width);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 720px 720px;
+}
+
+.story-craft__img {
+  width: 100%;
+  height: 680px;
+  object-fit: cover;
+  border-radius: var(--radius-card);
+}
+
+.story-craft__copy {
+  padding: 72px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 28px;
+}
+
+.story-craft__heading {
+  font-family: var(--font-display);
+  font-size: 64px;
+  font-weight: var(--fw-regular);
+  line-height: 67.8px;
+  letter-spacing: -2.5px;
+  color: var(--color-tomato);
+}
+
+.story-craft__lead {
+  font-family: var(--font-sans);
+  font-size: 17px;
+  font-weight: var(--fw-regular);
+  line-height: 28px;
+  color: var(--color-taupe);
+}
+
+.story-craft__body {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  font-weight: var(--fw-regular);
+  line-height: 26.4px;
+  color: var(--color-taupe);
+}
+
+/* --------------------------------------------------------------------------
+   4. Craft Principles ("Craft principles" 1440×328)
+   -------------------------------------------------------------------------- */
+.craft-principles-section {
+  width: 100%;
+  background-color: var(--color-cream);
+}
+
+.craft-principles-section__inner {
+  max-width: var(--page-max-width);
+  margin: 0 auto;
+  padding: 64px var(--section-pad-x);
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.principles-list-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+.principle-item {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.principle-item__stat {
+  font-family: var(--font-display);
+  font-size: 42px;
+  font-weight: var(--fw-regular);
+  line-height: 44.5px;
+  letter-spacing: -1px;
+  color: var(--color-tomato);
+}
+
+.principle-item__label {
+  font-family: var(--font-sans);
+  font-size: 15px;
+  font-weight: var(--fw-regular);
+  line-height: 18.2px;
+  color: var(--color-espresso);
+}
+
+.principle-item__desc {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: var(--fw-regular);
+  line-height: 23.1px;
+  color: var(--color-taupe);
+}
+
+/* --------------------------------------------------------------------------
+   5. People and Place ("People and place" 1440×668, #F8EBDC bg)
+   -------------------------------------------------------------------------- */
+.people-place-section {
+  width: 100%;
+  background-color: var(--color-parchment);
+}
+
+.people-place-section__inner {
+  max-width: var(--page-max-width);
+  margin: 0 auto;
+  padding: 64px var(--section-pad-x);
+  display: grid;
+  grid-template-columns: 540px 692px;
+  gap: 64px;
+  align-items: center;
+}
+
+.people-place__copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 26px;
+}
+
+.people-place__heading {
+  font-family: var(--font-display);
+  font-size: 54px;
+  font-weight: var(--fw-regular);
+  line-height: 57.2px;
+  letter-spacing: -2.5px;
+  color: var(--color-tomato);
+}
+
+.people-place__body {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  font-weight: var(--fw-regular);
+  line-height: 26.4px;
+  color: var(--color-taupe);
+}
+
+.people-place__img {
+  width: 100%;
+  height: 540px;
+  object-fit: cover;
+  border-radius: var(--radius-card);
+}
+
+/* --------------------------------------------------------------------------
+   6. Founders Note ("Founders note" 1440×348)
+   -------------------------------------------------------------------------- */
+.founders-note-section {
+  width: 100%;
+  background-color: var(--color-cream);
+}
+
+.founders-note-section__inner {
+  max-width: var(--page-max-width);
+  margin: 0 auto;
+  padding: 72px 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 26px;
+}
+
+.founders-note__quote {
+  font-family: var(--font-display);
+  font-size: 48px;
+  font-weight: var(--fw-regular);
+  line-height: 57.6px;
+  letter-spacing: -1.6px;
+  color: var(--color-tomato);
+}
+
+.founders-note__author {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: var(--fw-regular);
+  line-height: 21.4px;
+  color: var(--color-taupe);
+}
+
+/* --------------------------------------------------------------------------
+   7. Closing Invitation ("Dinner is sorted" 1440×412)
+   -------------------------------------------------------------------------- */
+.closing-invitation-section {
+  width: 100%;
+  background-color: var(--color-tomato);
+}
+
+.closing-invitation-section__inner {
+  max-width: var(--page-max-width);
+  margin: 0 auto;
+  padding: 64px var(--section-pad-x);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 24px;
+}
+
+.closing-invitation__kicker {
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: var(--fw-regular);
+  line-height: 13.3px;
+  letter-spacing: 1.6px;
+  color: var(--color-cream);
+}
+
+.closing-invitation__headline {
+  font-family: var(--font-display);
+  font-size: 72px;
+  font-weight: var(--fw-regular);
+  line-height: 88.8px;
+  letter-spacing: -3px;
+  color: var(--color-cream);
+}
+
+.closing-invitation__desc {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  font-weight: var(--fw-regular);
+  line-height: 26.4px;
+  color: var(--color-cream);
+}

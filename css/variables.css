@@ -1,0 +1,126 @@
+/* ==========================================================================
+   Design Tokens & Font Definitions — Ciao Bello Pizzeria
+   Extracted directly from Figma file EXJfxi1zEtQE0YHajt40q6
+   ========================================================================== */
+
+@font-face {
+  font-family: 'Fraunces';
+  src: url('../assets/fonts/fraunces-normal.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Fraunces';
+  src: url('../assets/fonts/fraunces-italic.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../assets/fonts/inter-normal.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  /* ------------------------------------------------------------------------
+     Colors (Exact Figma Hex Tokens)
+     ------------------------------------------------------------------------ */
+  --color-tomato: #C63627;          /* Primary brand red, accents, CTAs, headings */
+  --color-tomato-hover: #AD2D20;    /* Hover state for primary tomato controls */
+  --color-cream: #FFF6E7;           /* Main page background, text on red surfaces */
+  --color-parchment: #F8EBDC;       /* Soft secondary surface, selected pills/cards */
+  --color-ivory: #FFFBF4;           /* Lightest card / input / summary surface */
+  --color-espresso: #32251F;        /* Primary body & item title text */
+  --color-taupe: #75665A;           /* Secondary muted text, captions, meta labels */
+  --color-sand: #DDC8B1;            /* Borders, hairlines, dividers */
+  --color-olive: #486341;           /* Open status dot, dietary tag text */
+  --color-sage: #CED1B2;            /* Map park fill, soft botanical accent */
+
+  /* Semantic Aliases */
+  --bg-page: var(--color-cream);
+  --bg-surface: var(--color-parchment);
+  --bg-elevated: var(--color-ivory);
+  --bg-brand: var(--color-tomato);
+  --text-primary: var(--color-espresso);
+  --text-secondary: var(--color-taupe);
+  --text-accent: var(--color-tomato);
+  --text-on-brand: var(--color-cream);
+  --border-subtle: var(--color-sand);
+  --border-accent: var(--color-tomato);
+
+  /* ------------------------------------------------------------------------
+     Typography
+     ------------------------------------------------------------------------ */
+  --font-display: 'Fraunces', Georgia, 'Times New Roman', serif;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  /* Font Weights */
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  --fw-black: 900;
+
+  /* ------------------------------------------------------------------------
+     Layout & Spacing Scale
+     ------------------------------------------------------------------------ */
+  --page-max-width: 1440px;
+  --container-max-width: 1296px;
+  --section-pad-x: 72px;
+
+  --space-2: 2px;
+  --space-4: 4px;
+  --space-6: 6px;
+  --space-8: 8px;
+  --space-10: 10px;
+  --space-12: 12px;
+  --space-14: 14px;
+  --space-16: 16px;
+  --space-18: 18px;
+  --space-20: 20px;
+  --space-24: 24px;
+  --space-28: 28px;
+  --space-32: 32px;
+  --space-36: 36px;
+  --space-40: 40px;
+  --space-44: 44px;
+  --space-48: 48px;
+  --space-56: 56px;
+  --space-64: 64px;
+  --space-72: 72px;
+  --space-80: 80px;
+  --space-96: 96px;
+  --space-112: 112px;
+
+  /* ------------------------------------------------------------------------
+     Borders & Radii
+     ------------------------------------------------------------------------ */
+  --border-width: 1px;
+  --border-width-thick: 1.5px;
+  --radius-pill: 100px;
+  --radius-card: 8px;
+  --radius-input: 6px;
+
+  /* ------------------------------------------------------------------------
+     Z-Index Layers
+     ------------------------------------------------------------------------ */
+  --z-base: 1;
+  --z-badge: 10;
+  --z-sticky: 50;
+  --z-header: 100;
+  --z-drawer-backdrop: 200;
+  --z-drawer: 210;
+  --z-toast: 300;
+
+  /* ------------------------------------------------------------------------
+     Transitions
+     ------------------------------------------------------------------------ */
+  --transition-fast: 150ms cubic-bezier(0.22, 1, 0.36, 1);
+  --transition-base: 240ms cubic-bezier(0.22, 1, 0.36, 1);
+}

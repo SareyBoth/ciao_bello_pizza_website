@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ciao Bello · Catering &amp; parties</title>
+  <meta name="description" content="Office lunches, birthdays, and just-because gatherings. Bring your people. We’ll bring the pizza.">
+  <link rel="icon" type="image/svg+xml" href="../assets/logos/ciao-bello-wordmark.svg">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/pages/catering.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body class="page-wrapper" data-page="catering">
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Top Welcome Announcement Bar -->
+  <div class="welcome-bar" role="region" aria-label="Store announcement">
+    <div class="welcome-bar__inner">
+      <span>A LITTLE NAPOLI. A LOT OF NEIGHBORHOOD. &nbsp;&bull;&nbsp; OPEN DAILY FROM NOON</span>
+    </div>
+  </div>
+
+  <!-- Primary Site Header -->
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a href="../index.html" class="brand-wordmark" aria-label="Ciao Bello Pizzeria Home">ciao, bello!</a>
+
+      <nav class="primary-nav" aria-label="Primary navigation">
+        <a href="menu.html" class="nav-link">The menu</a>
+        <a href="about.html" class="nav-link">Our story</a>
+        <a href="stores.html" class="nav-link">Come on over</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="order-online.html" class="header-cta">
+          <span>Order online</span>
+          <span class="header-cta__arrow" aria-hidden="true">↗</span>
+        </a>
+        <button type="button" class="mobile-menu-btn" data-mobile-menu-toggle aria-expanded="false" aria-controls="mobile-drawer" aria-label="Open navigation menu">
+          <span class="mobile-menu-btn__bars" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-drawer__backdrop" data-mobile-drawer-backdrop></div>
+  <aside id="mobile-drawer" class="mobile-drawer" aria-label="Mobile navigation" aria-hidden="true">
+    <div>
+      <div class="mobile-drawer__header">
+        <span class="brand-wordmark">ciao, bello!</span>
+        <button type="button" class="mobile-drawer__close" data-mobile-menu-close aria-label="Close navigation menu">&#10005;</button>
+      </div>
+      <nav class="mobile-drawer__nav" aria-label="Mobile links">
+        <a href="../index.html" class="mobile-drawer__link">Home</a>
+        <a href="menu.html" class="mobile-drawer__link">The menu</a>
+        <a href="about.html" class="mobile-drawer__link">Our story</a>
+        <a href="stores.html" class="mobile-drawer__link">Come on over</a>
+        <a href="deals.html" class="mobile-drawer__link">Offers</a>
+        <a href="catering.html" class="mobile-drawer__link is-active">Catering &amp; parties</a>
+        <a href="contact.html" class="mobile-drawer__link">Contact</a>
+        <a href="cart.html" class="mobile-drawer__link">Your cart (<span data-cart-count>0</span>)</a>
+      </nav>
+    </div>
+    <div class="mobile-drawer__footer">
+      <a href="order-online.html" class="btn btn--primary btn--full">
+        <span>Order online</span>
+        <span class="btn__arrow" aria-hidden="true">↗</span>
+      </a>
+      <p class="text-xs">182 DeGraw Street, Brooklyn • Open daily from noon</p>
+    </div>
+  </aside>
+
+  <main id="main-content">
+    <!-- 1. Page Introduction (1440×311) -->
+    <section class="page-intro" aria-labelledby="catering-page-title">
+      <div class="page-intro__inner">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="../index.html" class="breadcrumb__item">Home</a>
+          <span class="breadcrumb__sep" aria-hidden="true">/</span>
+          <span class="breadcrumb__current" aria-current="page">catering &amp; parties</span>
+        </nav>
+        <p class="section-eyebrow">CATERING &amp; PARTIES</p>
+        <h1 id="catering-page-title" class="page-intro__heading">Big table energy.</h1>
+        <p class="page-intro__desc">Office lunches, birthdays, and just-because gatherings. Bring your people. We’ll bring the pizza.</p>
+      </div>
+    </section>
+
+    <!-- 2. Catering Introduction (1440×514) -->
+    <section class="catering-intro-section" aria-labelledby="intro-heading">
+      <div class="catering-intro-section__inner">
+        <img src="../assets/images/catering-table-spread.png" alt="Generous spread of Ciao Bello pizza, salads and drinks" class="catering-intro__img" width="740" height="450">
+        <div class="catering-intro__copy">
+          <p class="section-eyebrow">GOOD COMPANY. GREAT PIZZA.</p>
+          <h2 id="intro-heading" class="catering-intro__heading">Less planning.<br>More celebrating.</h2>
+          <p class="catering-intro__desc">Our hand-stretched 12” pizzas, generous sides and sweet finishes make feeding a crowd feel easy. Tell us who’s coming and we’ll help you build the table.</p>
+          <a href="#catering-inquiry" class="btn btn--primary">
+            <span>Plan your gathering</span>
+            <span class="btn__arrow" aria-hidden="true">↗</span>
+          </a>
+          <p class="catering-intro__note">Please allow at least 48 hours’ notice. Pickup at Carroll Gardens; delivery by arrangement.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Catering Packages (1440×800, #F8EBDC bg) -->
+    <section class="catering-packages-section" aria-labelledby="packages-heading">
+      <div class="catering-packages-section__inner">
+        <div class="section-header-stack" style="gap: 12px;">
+          <p class="section-eyebrow">A STARTING POINT FOR YOUR FEAST</p>
+          <h2 id="packages-heading" class="catering-packages__heading">Every crowd gets a seat.</h2>
+        </div>
+
+        <div class="packages-grid">
+          <!-- Package 1: 10 people -->
+          <article class="package-card">
+            <p class="section-eyebrow">FEEDS ABOUT 10</p>
+            <h3 class="package-card__title">The little gathering</h3>
+            <p class="package-card__price">From $120</p>
+            <hr class="divider-sand">
+            <div class="package-card__items">
+              <p class="package-card__item">✓  5 × 12” pizzas</p>
+              <p class="package-card__item">✓  1 large neighborhood salad</p>
+              <p class="package-card__item">✓  Choice of Margherita &amp; Funghi Town</p>
+              <p class="package-card__item">✓  Plates, napkins &amp; plenty of amore</p>
+            </div>
+            <a href="#catering-inquiry" class="btn btn--outline btn--full" data-select-package="The little gathering (10 guests)">
+              <span>Ask about this package</span>
+              <span class="btn__arrow" aria-hidden="true">↗</span>
+            </a>
+          </article>
+
+          <!-- Package 2: 20 people -->
+          <article class="package-card">
+            <p class="section-eyebrow">FEEDS ABOUT 20</p>
+            <h3 class="package-card__title">The office favorite</h3>
+            <p class="package-card__price">From $260</p>
+            <hr class="divider-sand">
+            <div class="package-card__items">
+              <p class="package-card__item">✓  10 × 12” pizzas</p>
+              <p class="package-card__item">✓  2 large neighborhood salads</p>
+              <p class="package-card__item">✓  2 trays of garlic knots</p>
+              <p class="package-card__item">✓  Margherita, Hot Honey &amp; Funghi</p>
+            </div>
+            <a href="#catering-inquiry" class="btn btn--outline btn--full" data-select-package="The office favorite (20 guests)">
+              <span>Ask about this package</span>
+              <span class="btn__arrow" aria-hidden="true">↗</span>
+            </a>
+          </article>
+
+          <!-- Package 3: 30+ people -->
+          <article class="package-card">
+            <p class="section-eyebrow">30+ GUESTS</p>
+            <h3 class="package-card__title">The whole celebration</h3>
+            <p class="package-card__price">Let’s talk</p>
+            <hr class="divider-sand">
+            <div class="package-card__items">
+              <p class="package-card__item">✓  A pizza mix made for your crowd</p>
+              <p class="package-card__item">✓  Generous sides &amp; sweet finishes</p>
+              <p class="package-card__item">✓  Dietary choices planned with you</p>
+              <p class="package-card__item">✓  Pickup or delivery by arrangement</p>
+            </div>
+            <a href="#catering-inquiry" class="btn btn--outline btn--full" data-select-package="The whole celebration (30+ guests)">
+              <span>Ask about this package</span>
+              <span class="btn__arrow" aria-hidden="true">↗</span>
+            </a>
+          </article>
+        </div>
+
+        <p class="catering-packages__terms">Suggested portions are approximate. Final quantities, price and timing confirmed with our team. Prices exclude tax, delivery and optional extras. Vegan cheese +$3 and gluten-friendly base +$4 per pizza.</p>
+      </div>
+    </section>
+
+    <!-- 4. Catering Inquiry (1440×934) -->
+    <section id="catering-inquiry" class="catering-inquiry-section" aria-labelledby="inquiry-heading">
+      <div class="catering-inquiry-section__inner">
+        <div class="catering-inquiry__intro">
+          <p class="section-eyebrow">LET’S MAKE SOMETHING GOOD</p>
+          <h2 id="inquiry-heading" class="catering-inquiry__heading">Tell us about<br>your people.</h2>
+          <p class="catering-inquiry__desc">No two gatherings are the same. Share a few details and our team will get back to you within two business days with a plan and a quote.</p>
+          <hr class="divider-sand">
+          <p class="catering-inquiry__direct">Prefer a conversation?<br><strong>(718) 555-0148</strong><br><strong>hello@ciaobello.pizza</strong></p>
+          <p class="catering-inquiry__note">An inquiry isn’t a confirmed booking. We’ll agree availability, payment and all the little details together.</p>
+        </div>
+
+        <form class="catering-form" action="#" method="post" data-catering-form novalidate>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="cat-name" class="form-label">Your name *</label>
+              <input type="text" id="cat-name" name="name" class="form-input" placeholder="First and last name" required>
+            </div>
+            <div class="form-field">
+              <label for="cat-email" class="form-label">Email address *</label>
+              <input type="email" id="cat-email" name="email" class="form-input" placeholder="you@example.com" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-field">
+              <label for="cat-phone" class="form-label">Phone number *</label>
+              <input type="tel" id="cat-phone" name="phone" class="form-input" placeholder="(000) 000-0000" required>
+            </div>
+            <div class="form-field">
+              <label for="cat-occasion" class="form-label">Company / occasion</label>
+              <input type="text" id="cat-occasion" name="occasion" class="form-input" placeholder="A birthday, team lunch, reunion…">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-field">
+              <label for="cat-date" class="form-label">Event date *</label>
+              <input type="date" id="cat-date" name="date" class="form-input" placeholder="MM / DD / YYYY" required>
+            </div>
+            <div class="form-field">
+              <label for="cat-time" class="form-label">Preferred time *</label>
+              <select id="cat-time" name="time" class="form-input" required>
+                <option value="">Select a time</option>
+                <option value="12:00 PM">12:00 PM</option>
+                <option value="12:30 PM">12:30 PM</option>
+                <option value="1:00 PM">1:00 PM</option>
+                <option value="1:30 PM">1:30 PM</option>
+                <option value="5:00 PM">5:00 PM</option>
+                <option value="5:30 PM">5:30 PM</option>
+                <option value="6:00 PM">6:00 PM</option>
+                <option value="6:30 PM">6:30 PM</option>
+                <option value="7:00 PM">7:00 PM</option>
+                <option value="7:30 PM">7:30 PM</option>
+                <option value="8:00 PM">8:00 PM</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-field">
+              <label for="cat-guests" class="form-label">Number of guests *</label>
+              <input type="number" id="cat-guests" name="guests" min="5" max="200" class="form-input" placeholder="About how many people?" required>
+            </div>
+            <div class="form-field">
+              <label for="cat-package" class="form-label">Package preference</label>
+              <select id="cat-package" name="package" class="form-input" data-package-select>
+                <option value="">Help me choose</option>
+                <option value="The little gathering (10 guests)">The little gathering (feeds ~10)</option>
+                <option value="The office favorite (20 guests)">The office favorite (feeds ~20)</option>
+                <option value="The whole celebration (30+ guests)">The whole celebration (30+ guests)</option>
+                <option value="Custom package">Custom package</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="cat-address" class="form-label">Pickup or delivery address *</label>
+            <input type="text" id="cat-address" name="address" class="form-input" placeholder="Pickup at Carroll Gardens, or your event address" required>
+          </div>
+
+          <div class="form-field">
+            <label for="cat-notes" class="form-label">Anything else we should know?</label>
+            <textarea id="cat-notes" name="notes" rows="4" class="form-input form-textarea" placeholder="Dietary requirements, favorite pizzas, budget, or a little about your gathering…"></textarea>
+          </div>
+
+          <p class="catering-form__privacy">We’ll use your details to respond to this inquiry. See our Privacy policy.</p>
+
+          <div>
+            <button type="submit" class="btn btn--primary">
+              <span>Send catering inquiry</span>
+              <span class="btn__arrow" aria-hidden="true">↗</span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- 5. Catering Questions (1440×501, #F8EBDC bg) -->
+    <section class="catering-questions-section" aria-labelledby="catering-faq-heading">
+      <div class="catering-questions-section__inner">
+        <div class="catering-questions__intro">
+          <p class="section-eyebrow">THE LITTLE DETAILS</p>
+          <h2 id="catering-faq-heading" class="catering-questions__heading">Before the<br>big day.</h2>
+        </div>
+
+        <div class="faq-list" data-accordion-group>
+          <div class="faq-row is-open" data-accordion-item>
+            <button type="button" class="faq-row__header" aria-expanded="true" data-accordion-trigger>
+              <span class="faq-row__question">How much notice do you need?</span>
+              <span class="faq-row__icon" aria-hidden="true">−</span>
+            </button>
+            <p class="faq-row__answer" data-accordion-content>Please inquire at least 48 hours ahead. For larger groups, a little more notice helps us plan the dough and oven time.</p>
+          </div>
+
+          <div class="faq-row is-open" data-accordion-item>
+            <button type="button" class="faq-row__header" aria-expanded="true" data-accordion-trigger>
+              <span class="faq-row__question">Can you cater for dietary requirements?</span>
+              <span class="faq-row__icon" aria-hidden="true">−</span>
+            </button>
+            <p class="faq-row__answer" data-accordion-content>Yes, we’ll plan options with you. Vegan cheese and gluten-friendly bases are available, but our kitchen handles flour and cannot guarantee an allergen-free environment.</p>
+          </div>
+
+          <div class="faq-row is-open" data-accordion-item>
+            <button type="button" class="faq-row__header" aria-expanded="true" data-accordion-trigger>
+              <span class="faq-row__question">Do you deliver catering orders?</span>
+              <span class="faq-row__icon" aria-hidden="true">−</span>
+            </button>
+            <p class="faq-row__answer" data-accordion-content>Delivery may be arranged with our team, depending on your address and event time. Any fee will be included in your quote.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="../index.html" class="footer-brand__wordmark">ciao, bello!</a>
+          <p class="footer-brand__desc">Your corner. Your people. Your pizza.<br>A little more amore in every day.</p>
+          <div class="footer-brand__socials">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+            <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer">TikTok ↗</a>
+          </div>
+        </div>
+
+        <div class="footer-col footer-col--explore">
+          <span class="footer-col__label">COME HUNGRY</span>
+          <a href="order-online.html" class="footer-col__link">Order online</a>
+          <a href="menu.html" class="footer-col__link">The menu</a>
+          <a href="about.html" class="footer-col__link">Our story</a>
+          <a href="stores.html" class="footer-col__link">Come on over</a>
+          <a href="deals.html" class="footer-col__link">Offers</a>
+          <a href="catering.html" class="footer-col__link">Catering &amp; parties</a>
+        </div>
+
+        <div class="footer-col footer-col--contact">
+          <span class="footer-col__label">SAY CIAO</span>
+          <a href="mailto:hello@ciaobello.pizza" class="footer-col__text">hello@ciaobello.pizza</a>
+          <a href="tel:+17185550148" class="footer-col__text">(718) 555-0148</a>
+          <p class="footer-col__text">182 DeGraw Street<br>Brooklyn, NY 11231</p>
+        </div>
+
+        <div class="footer-col footer-col--promise">
+          <span class="footer-col__label">MORE THAN A PIZZERIA</span>
+          <p class="footer-col__promise">Made in Brooklyn.<br>Raised on amore.</p>
+          <p class="footer-col__text">Tag your table: @ciaobellopizza</p>
+        </div>
+      </div>
+
+      <div class="footer-legal">
+        <span>&copy; <span data-current-year>2026</span> Ciao Bello Pizzeria. All slices reserved.</span>
+        <div class="footer-legal__policies">
+          <a href="contact.html">Privacy policy</a>
+          <a href="contact.html">Terms of use</a>
+          <a href="contact.html">Accessibility</a>
+        </div>
+        <span class="footer-legal__signoff">SEE YOU AT THE TABLE. ♡</span>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast-container" aria-live="polite" aria-atomic="true" data-toast-container></div>
+
+  <script type="module" src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,290 @@
+/* ==========================================================================
+   Our Stores Page Styles ("Ciao Bello · Our stores" 11:25025)
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. Store Finder ("Store finder" 1440×693)
+   -------------------------------------------------------------------------- */
+.store-finder-section {
+  width: 100%;
+  background-color: var(--color-cream);
+}
+
+.store-finder-section__inner {
+  max-width: var(--page-max-width);
+  margin: 0 auto;
+  padding: 0 var(--section-pad-x) 64px var(--section-pad-x);
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.location-search-bar {
+  display: flex;
+  align-items: flex-end;
+  gap: 16px;
+}
+
+.location-search-bar .form-field {
+  flex: 1;
+}
+
+.results-summary-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.results-summary-bar__count {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: var(--fw-regular);
+  line-height: 16.9px;
+  color: var(--color-espresso);
+}
+
+.results-summary-bar__view {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: var(--fw-regular);
+  line-height: 15.7px;
+  color: var(--color-tomato);
+}
+
+/* Featured Store Card & Map (500px left, 764px right) */
+.featured-store-map-grid {
+  display: grid;
+  grid-template-columns: 500px 764px;
+  gap: 32px;
+  align-items: start;
+}
+
+.open-store-card {
+  background-color: var(--color-parchment);
+  border-radius: var(--radius-card);
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.open-store-card__status-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.open-store-card__open-badge {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: var(--fw-regular);
+  line-height: 14.5px;
+  color: var(--color-olive);
+}
+
+.open-store-card__title {
+  font-family: var(--font-display);
+  font-size: 44px;
+  font-weight: var(--fw-regular);
+  line-height: 46.6px;
+  letter-spacing: -1px;
+  color: var(--color-tomato);
+}
+
+.open-store-card__addr {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  font-weight: var(--fw-regular);
+  line-height: 26.4px;
+  color: var(--color-espresso);
+}
+
+.open-store-card__transit {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: var(--fw-regular);
+  line-height: 21.4px;
+  color: var(--color-taupe);
+}
+
+.open-store-card__hours {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.open-store-card__amenities {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: var(--fw-regular);
+  line-height: 15.7px;
+  color: var(--color-taupe);
+}
+
+.open-store-card__actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.store-map-column {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.store-map-column__caption {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: var(--fw-regular);
+  line-height: 21.4px;
+  color: var(--color-taupe);
+}
+
+/* --------------------------------------------------------------------------
+   2. Neighborhood Welcome ("Neighborhood welcome" 1440×470, #F8EBDC bg)
+   -------------------------------------------------------------------------- */
+.neighborhood-welcome-section {
+  width: 100%;
+  background-color: var(--color-parchment);
+}
+
+.neighborhood-welcome-section__inner {
+  max-width: var(--page-max-width);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 720px 720px;
+}
+
+.neighborhood-welcome__img {
+  width: 100%;
+  height: 470px;
+  object-fit: cover;
+  border-radius: var(--radius-card);
+}
+
+.neighborhood-welcome__copy {
+  padding: 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.neighborhood-welcome__heading {
+  font-family: var(--font-display);
+  font-size: 48px;
+  font-weight: var(--fw-regular);
+  line-height: 50.9px;
+  letter-spacing: -1px;
+  color: var(--color-tomato);
+}
+
+.neighborhood-welcome__desc {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  font-weight: var(--fw-regular);
+  line-height: 26.4px;
+  color: var(--color-taupe);
+}
+
+/* --------------------------------------------------------------------------
+   3. Future Stores ("Future stores" 1440×606)
+   -------------------------------------------------------------------------- */
+.future-stores-section {
+  width: 100%;
+  background-color: var(--color-cream);
+}
+
+.future-stores-section__inner {
+  max-width: var(--page-max-width);
+  margin: 0 auto;
+  padding: 64px var(--section-pad-x);
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.future-stores-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+
+.upcoming-store-card {
+  border: 1px solid var(--color-sand);
+  border-radius: var(--radius-card);
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.upcoming-store-card__title {
+  font-family: var(--font-display);
+  font-size: 40px;
+  font-weight: var(--fw-regular);
+  line-height: 42.4px;
+  letter-spacing: -1px;
+  color: var(--color-tomato);
+}
+
+.upcoming-store-card__status {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: var(--fw-regular);
+  line-height: 15.7px;
+  color: var(--color-tomato);
+}
+
+.upcoming-store-card__desc {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  font-weight: var(--fw-regular);
+  line-height: 26.4px;
+  color: var(--color-taupe);
+}
+
+.upcoming-store-card__note {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: var(--fw-regular);
+  line-height: 21.4px;
+  color: var(--color-taupe);
+}
+
+/* --------------------------------------------------------------------------
+   Search Bar Input Wrapper & Icon
+   -------------------------------------------------------------------------- */
+.form-input-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.form-input-box .form-input {
+  padding-right: 44px;
+}
+
+.form-input-box__icon {
+  position: absolute;
+  right: 16px;
+  color: var(--color-taupe);
+  font-size: 18px;
+  pointer-events: none;
+}
+
+/* --------------------------------------------------------------------------
+   Section Header Split
+   -------------------------------------------------------------------------- */
+.section-header-split {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+}

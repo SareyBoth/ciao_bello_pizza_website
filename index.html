@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ciao Bello Pizzeria — Good pizza. Great company. Ciao, bello!</title>
+  <meta name="description" content="Slow dough. Hot ovens. Full hearts. A little slice of Italy, made for the people around our table at 182 DeGraw Street, Brooklyn.">
+  <link rel="icon" type="image/svg+xml" href="assets/logos/slow-proofed-seal.svg">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages/home.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <div class="site-shell">
+    <!-- Top Welcome Announcement Bar -->
+    <div class="welcome-bar" role="region" aria-label="Store announcement">
+      <div class="welcome-bar__inner">
+        <span>A LITTLE NAPOLI. A LOT OF NEIGHBORHOOD. &nbsp;•&nbsp; OPEN DAILY FROM NOON</span>
+      </div>
+    </div>
+
+    <!-- Primary Site Header -->
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a href="index.html" class="brand-wordmark" aria-label="Ciao Bello Pizzeria Home">ciao, bello!</a>
+
+        <nav class="primary-nav" aria-label="Primary navigation">
+          <a href="pages/menu.html" class="nav-link">The menu</a>
+          <a href="pages/about.html" class="nav-link">Our story</a>
+          <a href="pages/stores.html" class="nav-link">Come on over</a>
+        </nav>
+
+        <div class="header-actions">
+          <a href="pages/order-online.html" class="header-cta">
+            <span>Order online</span>
+            <span class="header-cta__arrow" aria-hidden="true">↗</span>
+          </a>
+          <button type="button" class="mobile-menu-btn" data-mobile-menu-toggle aria-expanded="false" aria-controls="mobile-drawer" aria-label="Open navigation menu">
+            <span class="mobile-menu-btn__bars" aria-hidden="true">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-drawer__backdrop" data-mobile-drawer-backdrop></div>
+    <aside id="mobile-drawer" class="mobile-drawer" aria-label="Mobile navigation" aria-hidden="true">
+      <div>
+        <div class="mobile-drawer__header">
+          <span class="brand-wordmark">ciao, bello!</span>
+          <button type="button" class="mobile-drawer__close" data-mobile-menu-close aria-label="Close navigation menu">✕</button>
+        </div>
+        <nav class="mobile-drawer__nav" aria-label="Mobile links">
+          <a href="index.html" class="mobile-drawer__link is-active">Home</a>
+          <a href="pages/menu.html" class="mobile-drawer__link">The menu</a>
+          <a href="pages/about.html" class="mobile-drawer__link">Our story</a>
+          <a href="pages/stores.html" class="mobile-drawer__link">Come on over</a>
+          <a href="pages/deals.html" class="mobile-drawer__link">Offers</a>
+          <a href="pages/catering.html" class="mobile-drawer__link">Catering &amp; parties</a>
+          <a href="pages/contact.html" class="mobile-drawer__link">Contact</a>
+          <a href="pages/cart.html" class="mobile-drawer__link">Your cart (<span data-cart-count>5</span>)</a>
+        </nav>
+      </div>
+      <div class="mobile-drawer__footer">
+        <a href="pages/order-online.html" class="btn btn--primary btn--full">
+          <span>Order online</span>
+          <span class="btn__arrow" aria-hidden="true">↗</span>
+        </a>
+        <p class="text-xs">182 DeGraw Street, Brooklyn • Open daily from noon</p>
+      </div>
+    </aside>
+
+    <!-- Main Page Content -->
+    <main id="main-content" class="site-main">
+      <!-- 1. Hero Section ("Pizza night starts here") -->
+      <section class="home-hero" aria-labelledby="hero-heading">
+        <div class="home-hero__inner">
+          <div class="home-hero__message">
+            <div class="home-hero__story">
+              <span class="home-hero__kicker">YOUR NEW FAVORITE CORNER PIZZERIA</span>
+              <h1 id="hero-heading" class="home-hero__headline">Good pizza.<br>Great company.<br>Ciao, bello!</h1>
+              <p class="home-hero__desc">Slow dough. Hot ovens. Full hearts. A little slice of Italy, made for the people around our table.</p>
+            </div>
+
+            <div class="home-hero__actions">
+              <a href="pages/order-online.html" class="btn btn--primary">
+                <span>Get your pizza</span>
+                <span class="btn__arrow" aria-hidden="true">↗</span>
+              </a>
+              <a href="pages/menu.html" class="action-link action-link--lg">Explore the menu</a>
+            </div>
+
+            <div class="home-hero__service">DINE IN          ✦          PICK UP          ✦          DELIVERY</div>
+          </div>
+
+          <div class="home-hero__media">
+            <img src="assets/images/pizza-margherita-hero.png" alt="Freshly baked wood-fired Margherita pizza with blistered crust and basil" class="home-hero__img" width="696" height="630">
+            <div class="dough-seal home-hero__seal" aria-label="Slow proofed 48h, worth the wait">
+              <span class="dough-seal__top">SLOW PROOFED</span>
+              <span class="dough-seal__value">48h</span>
+              <span class="dough-seal__bottom">WORTH THE WAIT</span>
+            </div>
+            <div class="home-hero__caption">The Margherita. The one that started it all.</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. Brand Ribbon ("Brand ribbon") -->
+      <div class="brand-ribbon" aria-hidden="true">
+        <div class="brand-ribbon__inner">
+          <span>GOOD THINGS TAKE DOUGH &nbsp;&nbsp;&nbsp;&nbsp;✦&nbsp;&nbsp;&nbsp;&nbsp; HAND-STRETCHED WITH LOVE &nbsp;&nbsp;&nbsp;&nbsp;✦&nbsp;&nbsp;&nbsp;&nbsp; FIRED UP FOR YOU &nbsp;&nbsp;&nbsp;&nbsp;✦</span>
+        </div>
+      </div>
+
+      <!-- 3. The Signature Menu ("The signature menu") -->
+      <section class="home-signature-menu" aria-labelledby="signature-menu-heading">
+        <div class="home-signature-menu__inner">
+          <div class="home-signature-menu__header">
+            <div class="home-signature-menu__title-group">
+              <span class="section-eyebrow">THE USUALS. NEVER ORDINARY.</span>
+              <h2 id="signature-menu-heading" class="home-signature-menu__heading">Meet your next favorite.</h2>
+            </div>
+            <a href="pages/menu.html" class="action-link action-link--lg">See the full menu ↗</a>
+          </div>
+
+          <div class="home-category-bar">
+            <div class="category-pills" role="tablist" aria-label="Menu categories">
+              <button type="button" class="category-pill is-active" data-menu-filter="all" aria-pressed="true">Signature pizzas</button>
+              <button type="button" class="category-pill" data-menu-filter="antipasti" aria-pressed="false">Small plates</button>
+              <button type="button" class="category-pill" data-menu-filter="dolci" aria-pressed="false">Something sweet</button>
+              <button type="button" class="category-pill" data-menu-filter="drinks" aria-pressed="false">Drinks</button>
+            </div>
+            <span class="home-category-bar__note">All pizzas are 12”  •  Made to order</span>
+          </div>
+
+          <div class="home-pizza-grid">
+            <!-- Card 1: The Margherita -->
+            <article class="home-pizza-card" data-category="pizzas">
+              <div class="home-pizza-card__media">
+                <a href="pages/product-detail.html">
+                  <img src="assets/images/pizza-margherita-card.png" alt="The Margherita pizza" class="home-pizza-card__img" width="413" height="390" loading="lazy">
+                </a>
+                <button type="button" class="home-pizza-card__quick-add" data-add-to-cart data-item-id="margherita" data-item-name="The Margherita" data-item-price="18" data-item-meta="12” · Classic crust · No extras" data-item-image="assets/images/pizza-margherita-card.png" aria-label="Add The Margherita to order">+</button>
+              </div>
+              <div class="home-pizza-card__details">
+                <div class="home-pizza-card__top">
+                  <h3 class="home-pizza-card__name"><a href="pages/product-detail.html">The Margherita</a></h3>
+                  <span class="home-pizza-card__price">$18</span>
+                </div>
+                <p class="home-pizza-card__desc">San Marzano tomato, fior di latte, fresh basil, extra-virgin olive oil</p>
+                <span class="home-pizza-card__tag">V  •  THE CLASSIC</span>
+              </div>
+            </article>
+
+            <!-- Card 2: Hot Honey, Amore -->
+            <article class="home-pizza-card" data-category="pizzas">
+              <div class="home-pizza-card__media">
+                <a href="pages/product-detail.html">
+                  <img src="assets/images/pizza-hot-honey-card.png" alt="Hot Honey, Amore pizza" class="home-pizza-card__img" width="413" height="390" loading="lazy">
+                </a>
+                <button type="button" class="home-pizza-card__quick-add" data-add-to-cart data-item-id="hot-honey-amore" data-item-name="Hot Honey, Amore" data-item-price="23" data-item-meta="12” · Classic crust · No extras" data-item-image="assets/images/cart-hot-honey-thumb.png" aria-label="Add Hot Honey, Amore to order">+</button>
+              </div>
+              <div class="home-pizza-card__details">
+                <div class="home-pizza-card__top">
+                  <h3 class="home-pizza-card__name"><a href="pages/product-detail.html">Hot Honey, Amore</a></h3>
+                  <span class="home-pizza-card__price">$23</span>
+                </div>
+                <p class="home-pizza-card__desc">Crispy pepperoni, fior di latte, Calabrian chili, house hot honey</p>
+                <span class="home-pizza-card__tag">SPICY  •  CROWD FAVORITE</span>
+              </div>
+            </article>
+
+            <!-- Card 3: Funghi Town -->
+            <article class="home-pizza-card" data-category="pizzas">
+              <div class="home-pizza-card__media">
+                <a href="pages/product-detail.html">
+                  <img src="assets/images/pizza-funghi-town-card.png" alt="Funghi Town pizza" class="home-pizza-card__img" width="413" height="390" loading="lazy">
+                </a>
+                <button type="button" class="home-pizza-card__quick-add" data-add-to-cart data-item-id="funghi-town" data-item-name="Funghi Town" data-item-price="22" data-item-meta="12” · Classic crust · No extras" data-item-image="assets/images/pizza-funghi-town-card.png" aria-label="Add Funghi Town to order">+</button>
+              </div>
+              <div class="home-pizza-card__details">
+                <div class="home-pizza-card__top">
+                  <h3 class="home-pizza-card__name"><a href="pages/product-detail.html">Funghi Town</a></h3>
+                  <span class="home-pizza-card__price">$22</span>
+                </div>
+                <p class="home-pizza-card__desc">Roasted wild mushrooms, taleggio, fior di latte, thyme, garlic oil</p>
+                <span class="home-pizza-card__tag">V  •  WHITE PIE</span>
+              </div>
+            </article>
+          </div>
+
+          <p class="home-signature-menu__note">Everyone gets a seat at the table. Vegan cheese +$3  •  Gluten-friendly base +$4  •  Tell us about your allergies.</p>
+        </div>
+      </section>
+
+      <!-- 4. Our Slow Dough Story ("Our slow dough story") -->
+      <section class="home-dough-story" aria-labelledby="dough-story-heading">
+        <div class="home-dough-story__inner">
+          <div class="home-dough-story__media">
+            <img src="assets/images/craft-pizza-maker.png" alt="Pizzaiolo stretching 48-hour fermented dough on a floured wooden bench" class="home-dough-story__img" width="720" height="710" loading="lazy">
+            <div class="home-dough-story__caption">FLOUR ON OUR HANDS. HEART IN EVERY PIE.</div>
+          </div>
+
+          <div class="home-dough-story__copy">
+            <span class="section-eyebrow">NO SHORTCUTS. JUST GOOD PIZZA.</span>
+            <h2 id="dough-story-heading" class="home-dough-story__heading">A little patience.<br>A lot of amore.</h2>
+            <p class="home-dough-story__lead">Our dough rests for 48 hours, then gets stretched by hand and kissed by a roaring oven. The result? A light, airy crust with just the right char. Napoli in spirit. Your neighborhood at heart.</p>
+            <p class="home-dough-story__sub">Pull up a chair, bring your people, and stay for one more slice.</p>
+            <div class="home-dough-story__sig">
+              <span class="home-dough-story__names">Luca &amp; Mia</span>
+              <span class="home-dough-story__role">FOUNDERS, DOUGH LOVERS,
+YOUR NEW NEIGHBORS</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. The Good Stuff ("The good stuff") -->
+      <section class="home-good-stuff" aria-label="Our craft principles">
+        <div class="home-good-stuff__inner">
+          <div class="good-stuff-item">
+            <span class="good-stuff-item__stat">48 hours</span>
+            <h3 class="good-stuff-item__title">Slow is our secret</h3>
+            <p class="good-stuff-item__desc">Long-fermented dough that’s light, airy, and full of flavor.</p>
+          </div>
+          <div class="good-stuff-item">
+            <span class="good-stuff-item__stat">00 flour</span>
+            <h3 class="good-stuff-item__title">The real Italian stuff</h3>
+            <p class="good-stuff-item__desc">Finely milled flour for that soft, tender Neapolitan bite.</p>
+          </div>
+          <div class="good-stuff-item">
+            <span class="good-stuff-item__stat">450°C</span>
+            <h3 class="good-stuff-item__title">A little fire does wonders</h3>
+            <p class="good-stuff-item__desc">High heat, blistered edges, and a 90-second bake.</p>
+          </div>
+          <div class="good-stuff-item">
+            <span class="good-stuff-item__stat">100% amore</span>
+            <h3 class="good-stuff-item__title">Our not-so-secret ingredient</h3>
+            <p class="good-stuff-item__desc">San Marzano tomatoes, fior di latte, and people who care.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 6. Pizza Your Way ("Pizza your way") -->
+      <section class="home-service-ways" aria-labelledby="service-ways-heading">
+        <div class="checker-trim checker-trim--home" aria-hidden="true"></div>
+        <div class="home-service-ways__inner">
+          <div class="home-service-ways__header">
+            <div class="home-service-ways__title-group">
+              <span class="section-eyebrow section-eyebrow--cream">HOW DO YOU CIAO?</span>
+              <h2 id="service-ways-heading" class="home-service-ways__heading">Your pizza. Your place.</h2>
+            </div>
+            <a href="pages/order-online.html" class="action-link action-link--cream action-link--lg">Start your order ↗</a>
+          </div>
+
+          <div class="home-service-ways__grid">
+            <div class="service-way-card">
+              <img src="assets/icons/utensils-cream.svg" alt="" class="service-way-card__icon" width="28" height="28">
+              <h3 class="service-way-card__title">Make yourself at home.</h3>
+              <p class="service-way-card__desc">Grab a table, share a pie, stay for a glass. Walk-ins are always welcome.</p>
+              <span class="service-way-card__meta">DINE IN  •  OPEN DAILY FROM NOON</span>
+            </div>
+            <div class="service-way-card">
+              <img src="assets/icons/shopping-bag-cream.svg" alt="" class="service-way-card__icon" width="28" height="28">
+              <h3 class="service-way-card__title">Swing by. Grab a pie.</h3>
+              <p class="service-way-card__desc">Order ahead and pick it up hot from the counter on your way home.</p>
+              <span class="service-way-card__meta">PICK UP  •  READY IN 15–20 MINS</span>
+            </div>
+            <div class="service-way-card">
+              <img src="assets/icons/bike-cream.svg" alt="" class="service-way-card__icon" width="28" height="28">
+              <h3 class="service-way-card__title">Your sofa. Our pizza.</h3>
+              <p class="service-way-card__desc">Hot, boxed, and headed your way—so pizza night never has to wait.</p>
+              <span class="service-way-card__meta">DELIVERY  •  STRAIGHT TO YOUR DOOR</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 7. Love From The Neighborhood ("Love from the neighborhood") -->
+      <section class="home-reviews" aria-labelledby="reviews-heading">
+        <div class="home-reviews__inner">
+          <div class="home-reviews__header">
+            <div class="home-reviews__title-group">
+              <span class="section-eyebrow">GOOD PIZZA GETS PEOPLE TALKING</span>
+              <h2 id="reviews-heading" class="home-reviews__heading">The neighborhood has spoken.</h2>
+            </div>
+            <div class="home-reviews__summary">
+              <span class="home-reviews__score">4.9 / 5</span>
+              <span class="home-reviews__count">From 240+ happy neighbors on Google</span>
+            </div>
+          </div>
+
+          <div class="home-reviews__grid">
+            <article class="review-card">
+              <div class="review-card__top">
+                <div class="review-card__stars" aria-label="5 out of 5 stars">★★★★★</div>
+                <blockquote class="review-card__quote">“We came in for a quick Tuesday slice and stayed for two hours. The crust is unreal and the staff treat you like old friends.”</blockquote>
+              </div>
+              <div class="review-card__author">
+                <span class="review-card__name">Sophie R.</span>
+                <span class="review-card__context">Regular since week one  •  The Margherita</span>
+              </div>
+            </article>
+
+            <article class="review-card">
+              <div class="review-card__top">
+                <div class="review-card__stars" aria-label="5 out of 5 stars">★★★★★</div>
+                <blockquote class="review-card__quote">“Hot Honey, Amore should come with a warning label. Sweet, spicy, blistered in all the right places. Easily our Friday night ritual.”</blockquote>
+              </div>
+              <div class="review-card__author">
+                <span class="review-card__name">James L.</span>
+                <span class="review-card__context">Pickup order  •  Hot Honey, Amore</span>
+              </div>
+            </article>
+
+            <article class="review-card">
+              <div class="review-card__top">
+                <div class="review-card__stars" aria-label="5 out of 5 stars">★★★★★</div>
+                <blockquote class="review-card__quote">“Feels like a little corner of Italy dropped into our street. Great music, warm plates, and the tiramisu never makes it home.”</blockquote>
+              </div>
+              <div class="review-card__author">
+                <span class="review-card__name">Elena M.</span>
+                <span class="review-card__context">Dine-in table for four  •  Funghi Town</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 8. Your Neighborhood Table ("Your neighborhood table") -->
+      <section class="home-table-section" aria-labelledby="table-heading">
+        <div class="home-table-section__inner">
+          <div class="home-table-section__details">
+            <span class="section-eyebrow">THERE’S A SEAT WITH YOUR NAME ON IT</span>
+            <h2 id="table-heading" class="home-table-section__heading">Come hungry.<br>Leave happy.</h2>
+            <p class="home-table-section__address">182 DeGraw Street, Brooklyn, NY 11231</p>
+
+            <div class="home-table-section__hours">
+              <div class="hours-row">
+                <span class="hours-row__day">Monday – Thursday</span>
+                <span class="hours-row__time">12pm – 10pm</span>
+              </div>
+              <div class="hours-row">
+                <span class="hours-row__day">Friday – Saturday</span>
+                <span class="hours-row__time">12pm – 11pm</span>
+              </div>
+              <div class="hours-row">
+                <span class="hours-row__day">Sunday</span>
+                <span class="hours-row__time">12pm – 9pm</span>
+              </div>
+            </div>
+
+            <div class="home-table-section__actions">
+              <a href="pages/carroll-gardens.html" class="btn btn--primary home-table-section__btn">
+                <span>Get directions</span>
+                <span class="btn__arrow" aria-hidden="true">↗</span>
+              </a>
+              <a href="tel:+17185550148" class="home-table-section__phone">(718) 555-0148</a>
+            </div>
+          </div>
+
+          <div class="home-table-section__media">
+            <img src="assets/images/neighborhood-pizzeria-interior.png" alt="Warm neighborhood dining room at Ciao Bello Pizzeria in Carroll Gardens" class="home-table-section__img" width="790" height="720" loading="lazy">
+            <div class="home-table-section__badge">Walk in as a neighbor. Leave as famiglia.</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 9. A Few Good Questions ("A few good questions") -->
+      <section class="faq-split-section faq-split-section--home" aria-labelledby="home-faq-heading">
+        <div class="faq-split-section__inner">
+          <div class="faq-intro">
+            <span class="section-eyebrow">GOOD TO KNOW</span>
+            <h2 id="home-faq-heading" class="faq-intro__heading">Before you<br>grab a slice.</h2>
+            <p class="faq-intro__desc">Something else on your mind? Say ciao at hello@ciaobello.pizza.</p>
+          </div>
+
+          <div class="faq-list" data-accordion-group>
+            <div class="faq-item is-open">
+              <button type="button" class="faq-trigger" aria-expanded="true">
+                <span class="faq-trigger__question">Do you have vegan or gluten-friendly options?</span>
+                <span class="faq-trigger__icon" aria-hidden="true">−</span>
+              </button>
+              <div class="faq-answer">
+                <p>Absolutely. Swap in vegan mozzarella (+$3) or our gluten-friendly base (+$4) on any pie. Just let our team know about any allergies when you order.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button type="button" class="faq-trigger" aria-expanded="false">
+                <span class="faq-trigger__question">Can I book a table, or do I just walk in?</span>
+                <span class="faq-trigger__icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>Walk-ins are always welcome! For groups of 6 or more, give us a call at (718) 555-0148 so we can save a big table for your crew.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button type="button" class="faq-trigger" aria-expanded="false">
+                <span class="faq-trigger__question">How far do you deliver?</span>
+                <span class="faq-trigger__icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>We deliver within 3 miles of our Carroll Gardens pizzeria on DeGraw Street so your pie arrives hot and blistered.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button type="button" class="faq-trigger" aria-expanded="false">
+                <span class="faq-trigger__question">Can you feed a crowd?</span>
+                <span class="faq-trigger__icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>We’d love to! Head over to our Catering &amp; parties page to explore packages for 10 to 30+ guests.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 10. Dinner Is Sorted ("Dinner is sorted") -->
+      <section class="dinner-sorted dinner-sorted--home" aria-labelledby="home-closing-heading">
+        <div class="checker-trim checker-trim--home" aria-hidden="true"></div>
+        <div class="dinner-sorted__inner">
+          <span class="dinner-sorted__kicker">LESS SCROLLING. MORE SLICING.</span>
+          <h2 id="home-closing-heading" class="dinner-sorted__title">You had us at pizza.</h2>
+          <p class="dinner-sorted__desc">Tonight’s plans? Something hot, cheesy, and made with amore.</p>
+          <div class="dinner-sorted__actions">
+            <a href="pages/order-online.html" class="btn btn--cream">
+              <span>Order your favorites</span>
+              <span class="btn__arrow" aria-hidden="true">↗</span>
+            </a>
+            <span class="dinner-sorted__note">Pickup or delivery. Happiness either way.</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- 11. Global Footer ("Ciao for now") -->
+    <footer class="site-footer site-footer--home">
+      <div class="site-footer__inner">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <a href="index.html" class="footer-brand__wordmark">ciao, bello!</a>
+            <p class="footer-brand__desc">Your corner. Your people. Your pizza.<br>A little more amore in every day.</p>
+            <div class="footer-brand__socials">
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+              <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer">TikTok ↗</a>
+            </div>
+          </div>
+
+          <div class="footer-col footer-col--explore">
+            <span class="footer-col__label">COME HUNGRY</span>
+            <a href="pages/order-online.html" class="footer-col__link">Order online</a>
+            <a href="pages/menu.html" class="footer-col__link">The menu</a>
+            <a href="pages/about.html" class="footer-col__link">Our story</a>
+            <a href="pages/stores.html" class="footer-col__link">Come on over</a>
+            <a href="pages/deals.html" class="footer-col__link">Offers</a>
+            <a href="pages/catering.html" class="footer-col__link">Catering &amp; parties</a>
+          </div>
+
+          <div class="footer-col footer-col--contact">
+            <span class="footer-col__label">SAY CIAO</span>
+            <a href="mailto:hello@ciaobello.pizza" class="footer-col__text">hello@ciaobello.pizza</a>
+            <a href="tel:+17185550148" class="footer-col__text">(718) 555-0148</a>
+            <p class="footer-col__text">182 DeGraw Street<br>Brooklyn, NY 11231</p>
+          </div>
+
+          <div class="footer-col footer-col--promise">
+            <span class="footer-col__label">MORE THAN A PIZZERIA</span>
+            <p class="footer-col__promise">Made in Brooklyn.<br>Raised on amore.</p>
+            <p class="footer-col__text">Tag your table: @ciaobellopizza</p>
+          </div>
+        </div>
+
+        <div class="footer-legal">
+          <span>© <span data-current-year>2026</span> Ciao Bello Pizzeria. All slices reserved.</span>
+          <div class="footer-legal__policies">
+            <a href="pages/contact.html">Privacy policy</a>
+            <a href="pages/contact.html">Terms of use</a>
+            <a href="pages/contact.html">Accessibility</a>
+          </div>
+          <span class="footer-legal__signoff">SEE YOU AT THE TABLE. ♡</span>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

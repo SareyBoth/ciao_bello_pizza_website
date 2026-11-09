@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Cart — Ciao Bello Pizzeria</title>
+  <meta name="description" content="Review your Ciao Bello Pizzeria cart, apply promo codes, add kitchen notes, and proceed to checkout.">
+  <link rel="icon" type="image/svg+xml" href="../assets/logos/slow-proofed-seal.svg">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/pages/cart.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <div class="site-shell">
+    <!-- Top Welcome Announcement Bar -->
+    <div class="welcome-bar" role="region" aria-label="Store announcement">
+      <div class="welcome-bar__inner">
+        <span>A LITTLE NAPOLI. A LOT OF NEIGHBORHOOD. &nbsp;•&nbsp; OPEN DAILY FROM NOON</span>
+      </div>
+    </div>
+
+    <!-- Primary Site Header -->
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a href="../index.html" class="brand-wordmark" aria-label="Ciao Bello Pizzeria Home">ciao, bello!</a>
+
+        <nav class="primary-nav" aria-label="Primary navigation">
+          <a href="menu.html" class="nav-link">The menu</a>
+          <a href="about.html" class="nav-link">Our story</a>
+          <a href="stores.html" class="nav-link">Come on over</a>
+        </nav>
+
+        <div class="header-actions">
+          <a href="order-online.html" class="header-cta">
+            <span>Order online</span>
+            <span class="header-cta__arrow" aria-hidden="true">↗</span>
+          </a>
+          <button type="button" class="mobile-menu-btn" data-mobile-menu-toggle aria-expanded="false" aria-controls="mobile-drawer" aria-label="Open navigation menu">
+            <span class="mobile-menu-btn__bars" aria-hidden="true">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-drawer__backdrop" data-mobile-drawer-backdrop></div>
+    <aside id="mobile-drawer" class="mobile-drawer" aria-label="Mobile navigation" aria-hidden="true">
+      <div>
+        <div class="mobile-drawer__header">
+          <span class="brand-wordmark">ciao, bello!</span>
+          <button type="button" class="mobile-drawer__close" data-mobile-menu-close aria-label="Close navigation menu">✕</button>
+        </div>
+        <nav class="mobile-drawer__nav" aria-label="Mobile links">
+          <a href="../index.html" class="mobile-drawer__link">Home</a>
+          <a href="menu.html" class="mobile-drawer__link">The menu</a>
+          <a href="about.html" class="mobile-drawer__link">Our story</a>
+          <a href="stores.html" class="mobile-drawer__link">Come on over</a>
+          <a href="deals.html" class="mobile-drawer__link">Offers</a>
+          <a href="catering.html" class="mobile-drawer__link">Catering &amp; parties</a>
+          <a href="contact.html" class="mobile-drawer__link">Contact</a>
+          <a href="cart.html" class="mobile-drawer__link is-active">Your cart (<span data-cart-count>5</span>)</a>
+        </nav>
+      </div>
+      <div class="mobile-drawer__footer">
+        <a href="checkout.html" class="btn btn--primary btn--full">
+          <span>Continue to checkout</span>
+          <span class="btn__arrow" aria-hidden="true">↗</span>
+        </a>
+        <p class="text-xs">182 DeGraw Street, Brooklyn • Open daily from noon</p>
+      </div>
+    </aside>
+
+    <!-- Main Page Content -->
+    <main id="main-content" class="site-main">
+      <!-- Page Introduction ("Page introduction") -->
+      <section class="page-intro" aria-labelledby="page-heading">
+        <div class="page-intro__inner">
+          <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="../index.html">Home</a>
+            <span aria-hidden="true">/</span>
+            <span>your cart</span>
+          </nav>
+          <span class="page-intro__label">YOUR CART</span>
+          <h1 id="page-heading" class="page-intro__heading">Good choices, bello.</h1>
+          <p class="page-intro__desc">A little feast is taking shape. Check your favorites, add a little extra, and we’ll do the rest.</p>
+        </div>
+      </section>
+
+      <!-- 1. Cart Workspace ("Cart workspace") -->
+      <section class="cart-workspace" aria-label="Shopping cart items and order summary">
+        <div class="cart-workspace__inner">
+          <!-- Left Column: Cart Contents -->
+          <div class="cart-contents-col">
+            <!-- Fulfillment Details -->
+            <div class="fulfillment-card">
+              <img src="../assets/icons/shopping-bag.svg" alt="" class="fulfillment-card__icon" width="28" height="28">
+              <div class="fulfillment-card__info">
+                <span class="fulfillment-card__store" data-fulfillment-store-label>Pickup at Carroll Gardens</span>
+                <span class="fulfillment-card__desc" data-fulfillment-window-label>182 DeGraw Street · Today, 7:00–7:15 pm</span>
+              </div>
+              <a href="order-online.html" class="fulfillment-card__action">Change ↗</a>
+            </div>
+
+            <!-- Basket Header -->
+            <div class="basket-header">
+              <h2 class="basket-header__title">Your table of favorites</h2>
+              <span class="basket-header__count" data-cart-items-label>5 items</span>
+            </div>
+
+            <!-- Cart Items List -->
+            <div class="cart-items-list" data-cart-items-container>
+              <!-- Item 1: The Margherita -->
+              <article class="cart-item-row" data-cart-item-id="margherita-extra">
+                <img src="../assets/images/pizza-margherita-card.png" alt="The Margherita" class="cart-item-row__thumb" width="112" height="112">
+                <div class="cart-item-row__details">
+                  <h3 class="cart-item-row__name">The Margherita</h3>
+                  <p class="cart-item-row__meta">12” · Classic crust · Extra fior di latte +$3</p>
+                  <div class="cart-item-row__actions">
+                    <a href="product-detail.html" class="cart-item-row__link">Edit</a>
+                    <button type="button" class="cart-item-row__link" data-cart-remove="margherita-extra">Remove</button>
+                  </div>
+                </div>
+                <div class="cart-item-row__right">
+                  <span class="cart-item-row__price">$21.00</span>
+                  <div class="qty-control" aria-label="Quantity for The Margherita">
+                    <button type="button" class="qty-control__btn" data-cart-qty-dec="margherita-extra" aria-label="Decrease quantity">−</button>
+                    <span class="qty-control__val">1</span>
+                    <button type="button" class="qty-control__btn" data-cart-qty-inc="margherita-extra" aria-label="Increase quantity">+</button>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Item 2: Hot Honey, Amore -->
+              <article class="cart-item-row" data-cart-item-id="hot-honey-amore">
+                <img src="../assets/images/cart-hot-honey-thumb.png" alt="Hot Honey, Amore" class="cart-item-row__thumb" width="112" height="112">
+                <div class="cart-item-row__details">
+                  <h3 class="cart-item-row__name">Hot Honey, Amore</h3>
+                  <p class="cart-item-row__meta">12” · Classic crust · No extras</p>
+                  <div class="cart-item-row__actions">
+                    <a href="product-detail.html" class="cart-item-row__link">Edit</a>
+                    <button type="button" class="cart-item-row__link" data-cart-remove="hot-honey-amore">Remove</button>
+                  </div>
+                </div>
+                <div class="cart-item-row__right">
+                  <span class="cart-item-row__price">$23.00</span>
+                  <div class="qty-control" aria-label="Quantity for Hot Honey, Amore">
+                    <button type="button" class="qty-control__btn" data-cart-qty-dec="hot-honey-amore" aria-label="Decrease quantity">−</button>
+                    <span class="qty-control__val">1</span>
+                    <button type="button" class="qty-control__btn" data-cart-qty-inc="hot-honey-amore" aria-label="Increase quantity">+</button>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Item 3: Garlic knots -->
+              <article class="cart-item-row" data-cart-item-id="garlic-knots">
+                <img src="../assets/images/cart-garlic-knots-thumb.png" alt="Garlic knots" class="cart-item-row__thumb" width="112" height="112">
+                <div class="cart-item-row__details">
+                  <h3 class="cart-item-row__name">Garlic knots</h3>
+                  <p class="cart-item-row__meta">6 pieces · Marinara on the side</p>
+                  <div class="cart-item-row__actions">
+                    <a href="menu.html" class="cart-item-row__link">Edit</a>
+                    <button type="button" class="cart-item-row__link" data-cart-remove="garlic-knots">Remove</button>
+                  </div>
+                </div>
+                <div class="cart-item-row__right">
+                  <span class="cart-item-row__price">$8.00</span>
+                  <div class="qty-control" aria-label="Quantity for Garlic knots">
+                    <button type="button" class="qty-control__btn" data-cart-qty-dec="garlic-knots" aria-label="Decrease quantity">−</button>
+                    <span class="qty-control__val">1</span>
+                    <button type="button" class="qty-control__btn" data-cart-qty-inc="garlic-knots" aria-label="Increase quantity">+</button>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Item 4: Italian soda -->
+              <article class="cart-item-row" data-cart-item-id="italian-soda">
+                <div class="cart-item-row__icon-thumb">
+                  <img src="../assets/icons/cup-soda.svg" alt="" width="42" height="42">
+                </div>
+                <div class="cart-item-row__details">
+                  <h3 class="cart-item-row__name">Italian soda</h3>
+                  <p class="cart-item-row__meta">Blood orange · 330 ml · $4 each</p>
+                  <div class="cart-item-row__actions">
+                    <a href="menu.html" class="cart-item-row__link">Edit</a>
+                    <button type="button" class="cart-item-row__link" data-cart-remove="italian-soda">Remove</button>
+                  </div>
+                </div>
+                <div class="cart-item-row__right">
+                  <span class="cart-item-row__price">$8.00</span>
+                  <div class="qty-control" aria-label="Quantity for Italian soda">
+                    <button type="button" class="qty-control__btn" data-cart-qty-dec="italian-soda" aria-label="Decrease quantity">−</button>
+                    <span class="qty-control__val">2</span>
+                    <button type="button" class="qty-control__btn" data-cart-qty-inc="italian-soda" aria-label="Increase quantity">+</button>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <hr class="divider-sand">
+
+            <!-- Promo Code Form -->
+            <form class="cart-promo-row" data-promo-form novalidate>
+              <div class="form-field">
+                <label for="promo-code-input" class="form-label">A little something for you</label>
+                <input type="text" id="promo-code-input" class="form-input" value="CIAO5" data-promo-input>
+              </div>
+              <button type="submit" class="btn btn--outline" data-promo-submit-btn>
+                <span data-promo-btn-label>Applied ✓</span>
+                <span class="btn__arrow" aria-hidden="true">↗</span>
+              </button>
+            </form>
+
+            <p class="cart-promo-msg" data-promo-feedback>Ciao, new neighbor! $5 off your first online order of $40 or more.</p>
+
+            <!-- Kitchen Notes -->
+            <div class="form-field">
+              <label for="kitchen-notes-input" class="form-label">Kitchen notes (optional)</label>
+              <textarea id="kitchen-notes-input" class="form-textarea" placeholder="Anything our team should know? For allergies, please call us." data-kitchen-notes></textarea>
+            </div>
+
+            <!-- Keep Exploring Action -->
+            <div>
+              <a href="menu.html" class="btn btn--outline">
+                <span>Keep exploring the menu</span>
+                <span class="btn__arrow" aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Column: Order Summary Card -->
+          <aside class="order-summary-card" aria-label="Your order summary">
+            <span class="order-summary-card__label">A LITTLE BOX OF HAPPINESS</span>
+            <h2 class="order-summary-card__title">Your order</h2>
+            <p class="order-summary-card__fulfillment" data-summary-fulfillment>Pickup · Carroll Gardens
+Today, 7:00–7:15 pm</p>
+
+            <hr class="divider-sand">
+
+            <div class="order-summary-items" data-summary-items>
+              <div class="order-summary-item">
+                <div class="order-summary-item__row">
+                  <span class="order-summary-item__name">1 × The Margherita</span>
+                  <span class="order-summary-item__price">$21.00</span>
+                </div>
+                <span class="order-summary-item__meta">12” · Classic crust · Extra fior di latte +$3</span>
+              </div>
+
+              <div class="order-summary-item">
+                <div class="order-summary-item__row">
+                  <span class="order-summary-item__name">1 × Hot Honey, Amore</span>
+                  <span class="order-summary-item__price">$23.00</span>
+                </div>
+                <span class="order-summary-item__meta">12” · Classic crust · No extras</span>
+              </div>
+
+              <div class="order-summary-item">
+                <div class="order-summary-item__row">
+                  <span class="order-summary-item__name">1 × Garlic knots</span>
+                  <span class="order-summary-item__price">$8.00</span>
+                </div>
+                <span class="order-summary-item__meta">6 pieces · Marinara on the side</span>
+              </div>
+
+              <div class="order-summary-item">
+                <div class="order-summary-item__row">
+                  <span class="order-summary-item__name">2 × Italian soda</span>
+                  <span class="order-summary-item__price">$8.00</span>
+                </div>
+                <span class="order-summary-item__meta">Blood orange · 330 ml · $4 each</span>
+              </div>
+            </div>
+
+            <hr class="divider-sand">
+
+            <div class="order-summary-breakdown">
+              <div class="price-row">
+                <span class="price-row__label">Subtotal</span>
+                <span class="price-row__amount" data-summary-subtotal>$60.00</span>
+              </div>
+              <div class="price-row" data-summary-discount-row>
+                <span class="price-row__label" data-summary-discount-label>CIAO5 · Welcome discount</span>
+                <span class="price-row__amount" data-summary-discount>−$5.00</span>
+              </div>
+              <div class="price-row">
+                <span class="price-row__label" data-summary-delivery-label>Pickup</span>
+                <span class="price-row__amount" data-summary-delivery>Free</span>
+              </div>
+              <div class="price-row">
+                <span class="price-row__label">NY sales tax · 8.875%</span>
+                <span class="price-row__amount" data-summary-tax>$4.88</span>
+              </div>
+              <div class="price-row">
+                <span class="price-row__label">Tip</span>
+                <span class="price-row__amount" data-summary-tip>$0.00</span>
+              </div>
+            </div>
+
+            <hr class="divider-sand">
+
+            <div class="price-row price-row--total">
+              <span class="price-row__label">Total</span>
+              <span class="price-row__amount" data-summary-total>$59.88</span>
+            </div>
+
+            <a href="checkout.html" class="btn btn--primary btn--full">
+              <span>Continue to checkout</span>
+              <span class="btn__arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <p class="order-summary-card__note">Prices in USD. Prepared fresh at 182 DeGraw Street, Brooklyn, NY 11231.</p>
+          </aside>
+        </div>
+      </section>
+
+      <!-- 2. Order Reassurance ("Order reassurance") -->
+      <section class="order-reassurance" aria-label="Our promises">
+        <div class="order-reassurance__inner">
+          <span class="order-reassurance__promise">✦  Hand-stretched to order</span>
+          <span class="order-reassurance__promise">✦  48-hour slow dough</span>
+          <span class="order-reassurance__promise">✦  Made here. With amore.</span>
+        </div>
+      </section>
+    </main>
+
+    <!-- Global Footer ("Ciao for now") -->
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <a href="../index.html" class="footer-brand__wordmark">ciao, bello!</a>
+            <p class="footer-brand__desc">Your corner. Your people. Your pizza.<br>A little more amore in every day.</p>
+            <div class="footer-brand__socials">
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+              <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer">TikTok ↗</a>
+            </div>
+          </div>
+
+          <div class="footer-col footer-col--explore">
+            <span class="footer-col__label">COME HUNGRY</span>
+            <a href="order-online.html" class="footer-col__link">Order online</a>
+            <a href="menu.html" class="footer-col__link">The menu</a>
+            <a href="about.html" class="footer-col__link">Our story</a>
+            <a href="catering.html" class="footer-col__link">Catering &amp; parties</a>
+            <a href="deals.html" class="footer-col__link">Offers</a>
+            <a href="contact.html" class="footer-col__link">Contact</a>
+          </div>
+
+          <div class="footer-col footer-col--contact">
+            <span class="footer-col__label">SAY CIAO</span>
+            <a href="mailto:hello@ciaobello.pizza" class="footer-col__text">hello@ciaobello.pizza</a>
+            <a href="tel:+17185550148" class="footer-col__text">(718) 555-0148</a>
+            <p class="footer-col__text">182 DeGraw Street<br>Brooklyn, NY 11231</p>
+          </div>
+
+          <div class="footer-col footer-col--promise">
+            <span class="footer-col__label">MORE THAN A PIZZERIA</span>
+            <p class="footer-col__promise">Made in Brooklyn.<br>Raised on amore.</p>
+            <p class="footer-col__text">See you at the table.</p>
+          </div>
+        </div>
+
+        <div class="footer-legal">
+          <span>© <span data-current-year>2026</span> Ciao Bello Pizzeria. All slices reserved.</span>
+          <div class="footer-legal__policies">
+            <a href="contact.html">Privacy policy</a>
+            <a href="contact.html">Terms of use</a>
+            <a href="contact.html">Allergen info</a>
+          </div>
+          <span class="footer-legal__signoff">SEE YOU AT THE TABLE. ♡</span>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script type="module" src="../js/main.js"></script>
+</body>
+</html>

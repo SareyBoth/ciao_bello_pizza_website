@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ciao Bello · Contact</title>
+  <meta name="description" content="A question, a kind word, or a big pizza idea? There’s a real person at the other end. Let’s talk.">
+  <link rel="icon" type="image/svg+xml" href="../assets/logos/ciao-bello-wordmark.svg">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/pages/contact.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body class="page-wrapper" data-page="contact">
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Top Welcome Announcement Bar -->
+  <div class="welcome-bar" role="region" aria-label="Store announcement">
+    <div class="welcome-bar__inner">
+      <span>A LITTLE NAPOLI. A LOT OF NEIGHBORHOOD. &nbsp;&bull;&nbsp; OPEN DAILY FROM NOON</span>
+    </div>
+  </div>
+
+  <!-- Primary Site Header -->
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a href="../index.html" class="brand-wordmark" aria-label="Ciao Bello Pizzeria Home">ciao, bello!</a>
+
+      <nav class="primary-nav" aria-label="Primary navigation">
+        <a href="menu.html" class="nav-link">The menu</a>
+        <a href="about.html" class="nav-link">Our story</a>
+        <a href="stores.html" class="nav-link">Come on over</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="order-online.html" class="header-cta">
+          <span>Order online</span>
+          <span class="header-cta__arrow" aria-hidden="true">↗</span>
+        </a>
+        <button type="button" class="mobile-menu-btn" data-mobile-menu-toggle aria-expanded="false" aria-controls="mobile-drawer" aria-label="Open navigation menu">
+          <span class="mobile-menu-btn__bars" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-drawer__backdrop" data-mobile-drawer-backdrop></div>
+  <aside id="mobile-drawer" class="mobile-drawer" aria-label="Mobile navigation" aria-hidden="true">
+    <div>
+      <div class="mobile-drawer__header">
+        <span class="brand-wordmark">ciao, bello!</span>
+        <button type="button" class="mobile-drawer__close" data-mobile-menu-close aria-label="Close navigation menu">&#10005;</button>
+      </div>
+      <nav class="mobile-drawer__nav" aria-label="Mobile links">
+        <a href="../index.html" class="mobile-drawer__link">Home</a>
+        <a href="menu.html" class="mobile-drawer__link">The menu</a>
+        <a href="about.html" class="mobile-drawer__link">Our story</a>
+        <a href="stores.html" class="mobile-drawer__link">Come on over</a>
+        <a href="deals.html" class="mobile-drawer__link">Offers</a>
+        <a href="catering.html" class="mobile-drawer__link">Catering &amp; parties</a>
+        <a href="contact.html" class="mobile-drawer__link is-active">Contact</a>
+        <a href="cart.html" class="mobile-drawer__link">Your cart (<span data-cart-count>0</span>)</a>
+      </nav>
+    </div>
+    <div class="mobile-drawer__footer">
+      <a href="order-online.html" class="btn btn--primary btn--full">
+        <span>Order online</span>
+        <span class="btn__arrow" aria-hidden="true">↗</span>
+      </a>
+      <p class="text-xs">182 DeGraw Street, Brooklyn • Open daily from noon</p>
+    </div>
+  </aside>
+
+  <main id="main-content">
+    <!-- 1. Page Introduction (1440×281) -->
+    <section class="page-intro" aria-labelledby="contact-page-title">
+      <div class="page-intro__inner">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="../index.html" class="breadcrumb__item">Home</a>
+          <span class="breadcrumb__sep" aria-hidden="true">/</span>
+          <span class="breadcrumb__current" aria-current="page">say ciao</span>
+        </nav>
+        <p class="section-eyebrow">SAY CIAO</p>
+        <h1 id="contact-page-title" class="page-intro__heading">We’re all ears, bello.</h1>
+        <p class="page-intro__desc">A question, a kind word, or a big pizza idea? There’s a real person at the other end. Let’s talk.</p>
+      </div>
+    </section>
+
+    <!-- 2. Contact Options (1440×272) -->
+    <section class="contact-options-section" aria-label="Contact channels">
+      <div class="contact-options-section__inner">
+        <!-- Phone -->
+        <article class="contact-channel">
+          <img src="../assets/icons/phone.svg" alt="" class="contact-channel__icon" width="28" height="28">
+          <h2 class="contact-channel__title">Need us now?</h2>
+          <p class="contact-channel__detail"><a href="tel:7185550148">(718) 555-0148</a></p>
+          <p class="contact-channel__desc">For an order update or today’s visit, give the pizzeria a ring.</p>
+        </article>
+
+        <!-- Email -->
+        <article class="contact-channel">
+          <img src="../assets/icons/mail.svg" alt="" class="contact-channel__icon" width="28" height="28">
+          <h2 class="contact-channel__title">Drop us a line.</h2>
+          <p class="contact-channel__detail"><a href="mailto:hello@ciaobello.pizza">hello@ciaobello.pizza</a></p>
+          <p class="contact-channel__desc">For general questions and good ideas. We reply within two business days.</p>
+        </article>
+
+        <!-- Catering -->
+        <article class="contact-channel">
+          <img src="../assets/icons/users.svg" alt="" class="contact-channel__icon" width="28" height="28">
+          <h2 class="contact-channel__title">Bring a crowd.</h2>
+          <p class="contact-channel__detail"><a href="catering.html">Catering &amp; parties ↗</a></p>
+          <p class="contact-channel__desc">Office lunches, birthdays and big tables. Start a catering inquiry.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- 3. Message Form and Store (1440×723, #F8EBDC bg) -->
+    <section class="message-form-store-section" aria-labelledby="form-heading">
+      <div class="message-form-store-section__inner">
+        <!-- Message Form -->
+        <form class="contact-message-form" action="#" method="post" data-contact-form novalidate>
+          <p class="section-eyebrow">A LITTLE NOTE GOES A LONG WAY</p>
+          <h2 id="form-heading" class="contact-message-form__heading">What’s on your mind?</h2>
+
+          <div class="form-row">
+            <div class="form-field">
+              <label for="cnt-name" class="form-label">Your name *</label>
+              <input type="text" id="cnt-name" name="name" class="form-input" placeholder="First and last name" required>
+            </div>
+            <div class="form-field">
+              <label for="cnt-email" class="form-label">Email address *</label>
+              <input type="email" id="cnt-email" name="email" class="form-input" placeholder="you@example.com" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-field">
+              <label for="cnt-topic" class="form-label">What’s this about? *</label>
+              <select id="cnt-topic" name="topic" class="form-input" required>
+                <option value="">Select a topic</option>
+                <option value="General question">General question</option>
+                <option value="Order update">Order update</option>
+                <option value="Feedback">Feedback</option>
+                <option value="Press & partnerships">Press &amp; partnerships</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="cnt-ordernum" class="form-label">Order number (optional)</label>
+              <input type="text" id="cnt-ordernum" name="order_number" class="form-input" placeholder="e.g. CB-1048">
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="cnt-msg" class="form-label">Your message *</label>
+            <textarea id="cnt-msg" name="message" rows="4" class="form-input form-textarea" placeholder="Tell us a little more…" required></textarea>
+          </div>
+
+          <p class="contact-message-form__note">We’ll only use your details to reply to your message. For urgent order changes, please call instead of using this form.</p>
+
+          <div>
+            <button type="submit" class="btn btn--primary">
+              <span>Send your message</span>
+              <span class="btn__arrow" aria-hidden="true">↗</span>
+            </button>
+          </div>
+        </form>
+
+        <!-- Pizzeria Contact Card -->
+        <article class="contact-store-card">
+          <img src="../assets/images/neighborhood-pizzeria-interior.png" alt="Ciao Bello pizzeria at 182 DeGraw Street" class="contact-store-card__img" width="500" height="260">
+          <h2 class="contact-store-card__title">Come on over.</h2>
+          <p class="contact-store-card__addr">182 DeGraw Street, Brooklyn, NY 11231</p>
+          <div class="contact-store-card__hours">
+            <div class="hours-row">
+              <span class="hours-row__day">Monday – Thursday</span>
+              <span class="hours-row__time">12pm – 10pm</span>
+            </div>
+            <div class="hours-row">
+              <span class="hours-row__day">Friday – Saturday</span>
+              <span class="hours-row__time">12pm – 11pm</span>
+            </div>
+            <div class="hours-row">
+              <span class="hours-row__day">Sunday</span>
+              <span class="hours-row__time">12pm – 9pm</span>
+            </div>
+          </div>
+          <div>
+            <a href="https://maps.google.com/?q=182+DeGraw+Street+Brooklyn+NY+11231" target="_blank" rel="noopener noreferrer" class="action-link">Get directions ↗</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 4. Contact FAQs (1440×735) -->
+    <section id="faq" class="contact-faqs-section" aria-labelledby="faq-heading">
+      <div class="contact-faqs-section__inner">
+        <div class="contact-faqs__intro">
+          <p class="section-eyebrow">GOOD TO KNOW</p>
+          <h2 id="faq-heading" class="contact-faqs__heading">Before you<br>grab a slice.</h2>
+          <p class="contact-faqs__desc">The answers to a few things our neighbors ask most often. Still curious? Say ciao.</p>
+        </div>
+
+        <div class="faq-list" data-accordion-group>
+          <!-- FAQ 1 -->
+          <div class="faq-row is-open" data-accordion-item>
+            <button type="button" class="faq-row__header" aria-expanded="true" data-accordion-trigger>
+              <span class="faq-row__question">Do you have vegan or gluten-friendly options?</span>
+              <span class="faq-row__icon" aria-hidden="true">−</span>
+            </button>
+            <p class="faq-row__answer" data-accordion-content>Absolutely. Swap in vegan cheese (+$3) or our gluten-friendly base (+$4) on any pizza. Our kitchen handles flour, so we can’t guarantee an allergen-free environment. Just ask our team.</p>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="faq-row is-open" data-accordion-item>
+            <button type="button" class="faq-row__header" aria-expanded="true" data-accordion-trigger>
+              <span class="faq-row__question">Can I book a table or bring a big group?</span>
+              <span class="faq-row__icon" aria-hidden="true">−</span>
+            </button>
+            <p class="faq-row__answer" data-accordion-content>Walk-ins are welcome. For a larger group, call (718) 555-0148 so we can help you plan the best time to come over.</p>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="faq-row is-open" data-accordion-item>
+            <button type="button" class="faq-row__header" aria-expanded="true" data-accordion-trigger>
+              <span class="faq-row__question">How far do you deliver?</span>
+              <span class="faq-row__icon" aria-hidden="true">−</span>
+            </button>
+            <p class="faq-row__answer" data-accordion-content>We deliver within 3 miles of our Carroll Gardens pizzeria. Enter your address when ordering to check availability and see the delivery fee.</p>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="faq-row is-open" data-accordion-item>
+            <button type="button" class="faq-row__header" aria-expanded="true" data-accordion-trigger>
+              <span class="faq-row__question">Can you feed our party or office?</span>
+              <span class="faq-row__icon" aria-hidden="true">−</span>
+            </button>
+            <p class="faq-row__answer" data-accordion-content>We’d love to. Visit Catering &amp; parties to explore packages and send an inquiry. Please allow at least 48 hours’ notice.</p>
+          </div>
+
+          <!-- FAQ 5 -->
+          <div class="faq-row is-open" data-accordion-item>
+            <button type="button" class="faq-row__header" aria-expanded="true" data-accordion-trigger>
+              <span class="faq-row__question">Can I change an order I’ve already placed?</span>
+              <span class="faq-row__icon" aria-hidden="true">−</span>
+            </button>
+            <p class="faq-row__answer" data-accordion-content>Call the pizzeria right away with your order number. We’ll do our best to help before your pizza goes into the oven.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="../index.html" class="footer-brand__wordmark">ciao, bello!</a>
+          <p class="footer-brand__desc">Your corner. Your people. Your pizza.<br>A little more amore in every day.</p>
+          <div class="footer-brand__socials">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+            <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer">TikTok ↗</a>
+          </div>
+        </div>
+
+        <div class="footer-col footer-col--explore">
+          <span class="footer-col__label">COME HUNGRY</span>
+          <a href="order-online.html" class="footer-col__link">Order online</a>
+          <a href="menu.html" class="footer-col__link">The menu</a>
+          <a href="about.html" class="footer-col__link">Our story</a>
+          <a href="stores.html" class="footer-col__link">Come on over</a>
+          <a href="deals.html" class="footer-col__link">Offers</a>
+          <a href="catering.html" class="footer-col__link">Catering &amp; parties</a>
+        </div>
+
+        <div class="footer-col footer-col--contact">
+          <span class="footer-col__label">SAY CIAO</span>
+          <a href="mailto:hello@ciaobello.pizza" class="footer-col__text">hello@ciaobello.pizza</a>
+          <a href="tel:+17185550148" class="footer-col__text">(718) 555-0148</a>
+          <p class="footer-col__text">182 DeGraw Street<br>Brooklyn, NY 11231</p>
+        </div>
+
+        <div class="footer-col footer-col--promise">
+          <span class="footer-col__label">MORE THAN A PIZZERIA</span>
+          <p class="footer-col__promise">Made in Brooklyn.<br>Raised on amore.</p>
+          <p class="footer-col__text">Tag your table: @ciaobellopizza</p>
+        </div>
+      </div>
+
+      <div class="footer-legal">
+        <span>&copy; <span data-current-year>2026</span> Ciao Bello Pizzeria. All slices reserved.</span>
+        <div class="footer-legal__policies">
+          <a href="contact.html">Privacy policy</a>
+          <a href="contact.html">Terms of use</a>
+          <a href="contact.html">Accessibility</a>
+        </div>
+        <span class="footer-legal__signoff">SEE YOU AT THE TABLE. ♡</span>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast-container" aria-live="polite" aria-atomic="true" data-toast-container></div>
+
+  <script type="module" src="../js/main.js"></script>
+</body>
+</html>
